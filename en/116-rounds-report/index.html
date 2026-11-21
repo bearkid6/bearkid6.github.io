@@ -1,0 +1,1018 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Can Individual Investors Earn Excess Returns from Public Data? A Research Report on 116 Pre-Registered Tests · Qiushi Papers</title><meta name="description" content="Using free public data, 116 rounds of tests of whether an individual investor with very little capital who is a Chinese tax resident can reliably earn excess returns."><link rel="canonical" href="https://qiushi.luluh.top/en/116-rounds-report/"><link rel="alternate" hreflang="zh-CN" href="https://qiushi.luluh.top/116-rounds-report/"><link rel="alternate" hreflang="en" href="https://qiushi.luluh.top/en/116-rounds-report/"><link rel="alternate" hreflang="x-default" href="https://qiushi.luluh.top/116-rounds-report/"><meta property="og:type" content="article"><meta property="og:site_name" content="撸撸黄 LuluH"><meta property="og:locale" content="en_US"><meta property="og:url" content="https://qiushi.luluh.top/en/116-rounds-report/"><meta property="og:title" content="Can Individual Investors Earn Excess Returns from Public Data? A Research Report on 116 Pre-Registered Tests · Qiushi Papers"><meta property="og:description" content="Using free public data, 116 rounds of tests of whether an individual investor with very little capital who is a Chinese tax resident can reliably earn excess returns."><meta property="og:image" content="https://qiushi.luluh.top/og.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Can Individual Investors Earn Excess Returns from Public Data? A Research Report on 116 Pre-Registered Tests · Qiushi Papers"><meta name="twitter:description" content="Using free public data, 116 rounds of tests of whether an individual investor with very little capital who is a Chinese tax resident can reliably earn excess returns."><meta name="twitter:image" content="https://qiushi.luluh.top/og.png"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png"><link rel="apple-touch-icon" href="/icon-180.png"><link rel="alternate" type="application/rss+xml" title="撸撸黄 LuluH" href="https://luluh.top/rss.xml"><link rel="sitemap" href="https://qiushi.luluh.top/sitemap.xml"><link rel="preload" href="/fonts/jetbrains-mono-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin><meta name="theme-color" content="#171513" media="(prefers-color-scheme: dark)"><meta name="theme-color" content="#fcfbf9" media="(prefers-color-scheme: light)"><!-- 在页面画出来之前定好深浅色，避免先闪一下白底 --><script>
+      (function () {
+        var t = null;
+        try { t = localStorage.getItem('theme'); } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        }
+        document.documentElement.dataset.theme = t;
+      })();
+    </script><!-- 旧站链接兼容：/#/blog?id=post03 → /blog/how-stocks-work/ --><script>(function(){const legacyMap = {"post07":"/blog/expo-practice-script/","post03":"/blog/how-stocks-work/","post02":"/blog/html-to-word/","post04":"/blog/stock-terms/","post05":"/blog/stock-trading-rules/","post06":"/blog/chaoxing-copy/","post01":"/blog/pip-access-denied/"};
+
+      (function () {
+        var h = location.hash;
+        if (h.indexOf('#/') !== 0) return;
+        var m = h.match(/^#\/blog\?(?:.*&)?id=([^&]+)/);
+        var to = '/';
+        if (m && legacyMap[m[1]]) to = legacyMap[m[1]];
+        else if (/^#\/blog/.test(h)) to = '/blog/';
+        else if (/^#\/(homework|projects)/.test(h)) to = '/works/';
+        location.replace(to);
+      })();
+    })();</script><link rel="stylesheet" href="/_astro/_slug_.C0m8AR5H.css"></head> <body> <a class="skip-link" href="#main">Skip to content</a> <header class="site-header"> <div class="wrap"> <a href="https://luluh.top/" class="logo mono" aria-label="撸撸黄 LuluH 首页"> <span class="prompt">~/</span>luluh<span class="cursor" aria-hidden="true"></span> </a> <nav class="nav mono" aria-label="Main"> <a href="https://luluh.top/">luluh.top (中文)</a><a href="https://qiushi.luluh.top/en/" aria-current="page">Qiushi Papers</a> <a class="nav-lang" href="https://qiushi.luluh.top/116-rounds-report/" hreflang="zh-CN" lang="zh-CN">中文</a> </nav> <div class="header-actions">  <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode"> <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg> <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg> </button> </div> </div> </header> <main id="main">  <article class="wrap-narrow" data-pagefind-body> <div class="back-row" data-pagefind-ignore> <a class="back-link mono" href="/en/">← <svg class="qiushi-logo back-mark" viewBox="0 0 100 100" role="img" aria-label xmlns="http://www.w3.org/2000/svg">  <g> <path fill="var(--accent)" d="M17.04 30.62 L17.10 30.94 L17.18 31.34 L17.27 31.79 L17.37 32.31 L17.48 32.87 L17.60 33.46 L17.72 34.09 L17.85 34.74 L17.98 35.39 L18.10 36.05 L18.22 36.71 L18.33 37.35 L18.44 37.97 L18.53 38.56 L18.62 39.15 L18.71 39.77 L18.80 40.41 L18.89 41.07 L18.97 41.74 L19.05 42.40 L19.13 43.05 L19.20 43.69 L19.27 44.29 L19.34 44.85 L19.40 45.37 L19.45 45.83 L19.50 46.23 L19.53 46.56 L19.83 47.69 L20.41 48.72 L21.24 49.55 L22.25 50.15 L23.38 50.46 L24.56 50.47 L25.69 50.17 L26.72 49.59 L27.55 48.76 L28.15 47.75 L28.46 46.62 L28.47 45.44 L28.42 45.12 L28.37 44.72 L28.31 44.26 L28.24 43.74 L28.16 43.18 L28.08 42.58 L28.00 41.95 L27.91 41.29 L27.83 40.63 L27.74 39.97 L27.66 39.30 L27.59 38.66 L27.52 38.03 L27.47 37.44 L27.41 36.85 L27.36 36.22 L27.32 35.57 L27.27 34.91 L27.23 34.24 L27.19 33.57 L27.15 32.91 L27.12 32.27 L27.08 31.67 L27.05 31.10 L27.03 30.58 L27.00 30.11 L26.98 29.71 L26.96 29.38 L26.63 28.12 L25.99 26.98 L25.07 26.05 L23.94 25.39 L22.69 25.05 L21.38 25.04 L20.12 25.37 L18.98 26.01 L18.05 26.93 L17.39 28.06 L17.05 29.31 Z M22.68 33.45 L23.73 33.23 L25.01 32.95 L26.50 32.62 L28.17 32.25 L29.98 31.85 L31.92 31.43 L33.95 30.99 L36.05 30.54 L38.19 30.10 L40.34 29.66 L42.47 29.25 L44.56 28.86 L46.58 28.51 L48.51 28.21 L50.48 27.91 L52.55 27.57 L54.67 27.22 L56.82 26.87 L58.98 26.53 L61.11 26.21 L63.19 25.93 L65.19 25.68 L67.08 25.50 L68.81 25.38 L70.34 25.34 L71.61 25.39 L72.55 25.50 L73.04 25.65 L73.08 25.74 L72.81 25.69 L72.45 25.47 L72.16 25.20 L72.02 25.06 L71.96 25.13 L71.91 25.43 L71.86 25.92 L71.78 26.56 L71.68 27.33 L71.58 28.21 L71.50 29.21 L71.46 30.31 L71.51 31.32 L71.57 31.95 L71.62 32.46 L71.66 33.05 L71.68 33.72 L71.70 34.42 L71.70 35.16 L71.69 35.91 L71.68 36.65 L71.66 37.38 L71.63 38.08 L71.60 38.75 L71.58 39.38 L71.55 39.97 L71.53 40.45 L71.54 41.62 L71.86 42.76 L72.45 43.77 L73.29 44.59 L74.31 45.17 L75.45 45.47 L76.62 45.46 L77.76 45.14 L78.77 44.55 L79.59 43.71 L80.17 42.69 L80.47 41.55 L80.55 41.22 L80.67 40.82 L80.84 40.29 L81.03 39.66 L81.24 38.95 L81.46 38.18 L81.68 37.34 L81.90 36.46 L82.10 35.54 L82.27 34.58 L82.41 33.59 L82.50 32.57 L82.53 31.53 L82.49 30.68 L82.47 30.19 L82.47 29.69 L82.49 28.99 L82.53 28.14 L82.55 27.15 L82.54 26.04 L82.46 24.82 L82.25 23.48 L81.85 22.02 L81.14 20.47 L80.03 18.97 L78.53 17.70 L76.79 16.82 L74.96 16.35 L73.15 16.21 L71.37 16.29 L69.56 16.52 L67.69 16.86 L65.75 17.29 L63.74 17.79 L61.68 18.32 L59.59 18.89 L57.48 19.46 L55.38 20.02 L53.30 20.56 L51.28 21.04 L49.34 21.46 L47.49 21.79 L45.59 22.08 L43.56 22.35 L41.45 22.61 L39.29 22.86 L37.11 23.09 L34.94 23.31 L32.80 23.51 L30.73 23.70 L28.75 23.88 L26.90 24.04 L25.20 24.19 L23.69 24.33 L22.38 24.45 L21.32 24.55 L20.19 24.88 L19.18 25.49 L18.37 26.34 L17.81 27.37 L17.53 28.51 L17.55 29.68 L17.88 30.81 L18.49 31.82 L19.34 32.63 L20.37 33.19 L21.51 33.47 Z M24.46 49.97 L25.51 49.81 L26.80 49.59 L28.29 49.34 L29.96 49.05 L31.78 48.74 L33.73 48.41 L35.77 48.07 L37.87 47.73 L40.02 47.39 L42.17 47.06 L44.31 46.74 L46.40 46.46 L48.42 46.20 L50.34 45.98 L52.27 45.79 L54.30 45.62 L56.41 45.47 L58.56 45.32 L60.74 45.20 L62.91 45.08 L65.05 44.98 L67.12 44.88 L69.09 44.80 L70.94 44.72 L72.63 44.65 L74.15 44.59 L75.45 44.53 L76.52 44.47 L77.66 44.18 L78.68 43.61 L79.53 42.80 L80.13 41.79 L80.45 40.66 L80.47 39.48 L80.18 38.34 L79.61 37.32 L78.80 36.47 L77.79 35.87 L76.66 35.55 L75.48 35.53 L74.44 35.72 L73.15 35.96 L71.66 36.24 L70.00 36.56 L68.18 36.90 L66.24 37.27 L64.20 37.65 L62.10 38.03 L59.96 38.42 L57.81 38.79 L55.68 39.14 L53.59 39.47 L51.57 39.76 L49.66 40.02 L47.74 40.24 L45.71 40.45 L43.61 40.65 L41.45 40.83 L39.28 41.00 L37.11 41.16 L34.98 41.30 L32.92 41.44 L30.95 41.56 L29.11 41.67 L27.42 41.77 L25.90 41.87 L24.60 41.95 L23.54 42.03 L22.53 42.28 L21.62 42.79 L20.87 43.51 L20.33 44.41 L20.04 45.41 L20.03 46.46 L20.28 47.47 L20.79 48.38 L21.51 49.13 L22.41 49.67 L23.41 49.96 Z"></path> <path fill="currentColor" d="M45.00 5.00 L44.98 5.50 L44.95 6.06 L44.92 6.69 L44.89 7.39 L44.85 8.15 L44.81 8.98 L44.77 9.88 L44.72 10.84 L44.68 11.86 L44.64 12.96 L44.60 14.12 L44.56 15.35 L44.53 16.64 L44.50 18.01 L44.48 19.51 L44.47 21.19 L44.47 23.00 L44.47 24.91 L44.47 26.91 L44.48 28.96 L44.48 31.04 L44.48 33.11 L44.48 35.15 L44.46 37.12 L44.43 39.00 L44.39 40.76 L44.33 42.35 L44.25 43.79 L44.17 45.11 L44.09 46.33 L44.02 47.42 L43.95 48.38 L43.87 49.23 L43.78 49.97 L43.69 50.63 L43.58 51.21 L43.46 51.76 L43.32 52.30 L43.16 52.87 L42.96 53.49 L42.71 54.21 L42.40 55.04 L42.04 55.96 L41.64 56.93 L41.21 57.93 L40.74 58.96 L40.25 60.00 L39.73 61.05 L39.17 62.11 L38.58 63.17 L37.97 64.23 L37.32 65.28 L36.64 66.32 L35.92 67.34 L35.18 68.33 L34.41 69.28 L33.57 70.24 L32.58 71.27 L31.43 72.36 L30.18 73.48 L28.86 74.62 L27.49 75.76 L26.10 76.88 L24.73 77.96 L23.40 79.00 L22.14 79.97 L20.97 80.86 L19.93 81.67 L19.03 82.37 L18.33 82.95 L18.08 83.16 L17.89 83.43 L17.78 83.73 L17.75 84.06 L17.81 84.38 L17.95 84.67 L18.16 84.92 L18.43 85.11 L18.73 85.22 L19.06 85.25 L19.38 85.19 L19.67 85.05 L20.47 84.67 L21.46 84.21 L22.65 83.69 L23.99 83.10 L25.46 82.45 L27.02 81.75 L28.65 81.00 L30.31 80.21 L31.99 79.38 L33.65 78.51 L35.26 77.62 L36.81 76.68 L38.26 75.72 L39.59 74.72 L40.78 73.70 L41.91 72.66 L43.00 71.58 L44.03 70.47 L45.01 69.33 L45.95 68.18 L46.83 67.01 L47.66 65.84 L48.44 64.67 L49.17 63.50 L49.86 62.34 L50.49 61.19 L51.07 60.07 L51.60 58.96 L52.08 57.87 L52.49 56.81 L52.83 55.77 L53.10 54.74 L53.31 53.73 L53.46 52.73 L53.56 51.75 L53.62 50.78 L53.65 49.81 L53.67 48.82 L53.67 47.80 L53.68 46.71 L53.70 45.53 L53.75 44.21 L53.79 42.67 L53.82 40.95 L53.83 39.11 L53.83 37.16 L53.82 35.13 L53.80 33.06 L53.77 30.96 L53.73 28.87 L53.69 26.81 L53.65 24.81 L53.61 22.90 L53.57 21.10 L53.53 19.46 L53.50 17.99 L53.47 16.64 L53.44 15.35 L53.40 14.12 L53.36 12.96 L53.32 11.86 L53.28 10.84 L53.23 9.88 L53.19 8.98 L53.15 8.15 L53.11 7.39 L53.08 6.69 L53.05 6.06 L53.02 5.50 L53.00 5.00 L52.86 3.96 L52.46 3.00 L51.83 2.17 L51.00 1.54 L50.04 1.14 L49.00 1.00 L47.96 1.14 L47.00 1.54 L46.17 2.17 L45.54 3.00 L45.14 3.96 Z M47.67 59.94 L48.30 59.79 L49.08 59.59 L49.99 59.35 L51.02 59.07 L52.13 58.78 L53.30 58.47 L54.52 58.15 L55.76 57.84 L57.01 57.54 L58.22 57.25 L59.39 56.99 L60.49 56.77 L61.49 56.60 L62.37 56.48 L63.17 56.41 L63.96 56.38 L64.73 56.38 L65.48 56.42 L66.20 56.48 L66.89 56.56 L67.56 56.65 L68.19 56.76 L68.78 56.86 L69.34 56.97 L69.86 57.06 L70.34 57.14 L70.80 57.21 L71.19 57.25 L72.28 57.05 L73.29 56.58 L74.14 55.87 L74.77 54.96 L75.15 53.92 L75.25 52.81 L75.05 51.72 L74.58 50.71 L73.87 49.86 L72.96 49.23 L71.92 48.85 L70.81 48.75 L70.50 48.82 L70.13 48.91 L69.69 49.01 L69.18 49.13 L68.61 49.26 L67.99 49.39 L67.32 49.53 L66.60 49.68 L65.85 49.83 L65.07 49.97 L64.25 50.12 L63.40 50.26 L62.53 50.40 L61.63 50.52 L60.66 50.65 L59.59 50.77 L58.43 50.90 L57.21 51.03 L55.94 51.16 L54.64 51.29 L53.35 51.41 L52.08 51.53 L50.87 51.64 L49.72 51.75 L48.67 51.84 L47.73 51.93 L46.95 52.00 L46.33 52.06 L45.33 52.37 L44.45 52.92 L43.74 53.69 L43.25 54.61 L43.02 55.63 L43.06 56.67 L43.37 57.67 L43.92 58.55 L44.69 59.26 L45.61 59.75 L46.63 59.98 Z M67.47 50.63 L67.19 51.11 L66.85 51.70 L66.49 52.35 L66.10 53.05 L65.69 53.81 L65.25 54.60 L64.79 55.41 L64.32 56.23 L63.84 57.05 L63.35 57.85 L62.87 58.61 L62.40 59.32 L61.95 59.96 L61.53 60.53 L61.08 61.07 L60.54 61.66 L59.93 62.28 L59.26 62.93 L58.56 63.57 L57.83 64.22 L57.10 64.85 L56.37 65.47 L55.66 66.05 L54.99 66.61 L54.36 67.12 L53.79 67.58 L53.29 67.99 L52.89 68.34 L52.49 68.68 L52.20 69.12 L52.04 69.61 L52.00 70.13 L52.11 70.65 L52.34 71.11 L52.68 71.51 L53.12 71.80 L53.61 71.96 L54.13 72.00 L54.65 71.89 L55.11 71.66 L55.54 71.45 L56.07 71.21 L56.71 70.92 L57.45 70.59 L58.25 70.22 L59.12 69.83 L60.03 69.40 L60.97 68.93 L61.92 68.44 L62.88 67.92 L63.82 67.37 L64.74 66.78 L65.63 66.15 L66.47 65.47 L67.27 64.74 L68.04 63.96 L68.78 63.14 L69.49 62.29 L70.18 61.43 L70.83 60.57 L71.46 59.72 L72.05 58.89 L72.59 58.11 L73.10 57.38 L73.55 56.72 L73.94 56.16 L74.26 55.72 L74.53 55.37 L75.02 54.37 L75.24 53.29 L75.17 52.18 L74.82 51.13 L74.20 50.20 L73.37 49.47 L72.37 48.98 L71.29 48.76 L70.18 48.83 L69.13 49.18 L68.20 49.80 Z M28.88 62.95 L29.41 63.34 L30.05 63.80 L30.79 64.34 L31.62 64.95 L32.52 65.61 L33.49 66.31 L34.50 67.05 L35.56 67.82 L36.64 68.61 L37.74 69.40 L38.84 70.20 L39.93 70.98 L40.99 71.74 L42.02 72.48 L43.04 73.20 L44.07 73.93 L45.12 74.67 L46.19 75.43 L47.27 76.19 L48.37 76.95 L49.47 77.72 L50.58 78.50 L51.70 79.27 L52.82 80.04 L53.94 80.81 L55.07 81.57 L56.19 82.33 L57.28 83.06 L58.32 83.79 L59.34 84.53 L60.38 85.30 L61.44 86.09 L62.51 86.90 L63.61 87.71 L64.73 88.52 L65.88 89.32 L67.07 90.10 L68.29 90.85 L69.57 91.57 L70.89 92.24 L72.26 92.86 L73.72 93.41 L75.26 93.87 L76.84 94.23 L78.40 94.51 L79.95 94.70 L81.47 94.84 L82.95 94.93 L84.37 94.97 L85.72 94.99 L86.99 94.99 L88.15 94.98 L89.18 94.96 L90.06 94.95 L90.73 94.94 L91.28 94.96 L92.72 81.04 L91.97 80.92 L91.05 80.80 L90.08 80.67 L89.04 80.52 L87.94 80.37 L86.80 80.20 L85.63 80.03 L84.45 79.84 L83.27 79.64 L82.12 79.43 L81.03 79.22 L80.01 79.00 L79.10 78.79 L78.28 78.59 L77.45 78.38 L76.54 78.12 L75.58 77.83 L74.56 77.51 L73.51 77.15 L72.41 76.77 L71.27 76.36 L70.11 75.92 L68.92 75.45 L67.71 74.97 L66.47 74.47 L65.23 73.96 L63.97 73.45 L62.72 72.94 L61.52 72.44 L60.33 71.94 L59.13 71.43 L57.92 70.90 L56.71 70.37 L55.49 69.82 L54.28 69.28 L53.07 68.73 L51.86 68.18 L50.66 67.63 L49.47 67.09 L48.29 66.55 L47.12 66.03 L45.98 65.52 L44.82 65.01 L43.62 64.49 L42.40 63.95 L41.16 63.41 L39.92 62.87 L38.69 62.34 L37.50 61.82 L36.35 61.32 L35.25 60.84 L34.23 60.40 L33.29 59.99 L32.44 59.62 L31.72 59.31 L31.12 59.05 L30.57 58.82 L29.99 58.75 L29.41 58.83 L28.87 59.06 L28.40 59.42 L28.05 59.88 L27.82 60.43 L27.75 61.01 L27.83 61.59 L28.06 62.13 L28.42 62.60 Z"></path> </g> </svg> Qiushi Papers · All articles</a> <a class="lang-link" href="https://qiushi.luluh.top/116-rounds-report/" hreflang="zh-CN" lang="zh-CN">中文</a> </div> <header class="post-head"> <p class="print-only print-masthead"><svg class="qiushi-logo" viewBox="0 0 204 100" role="img" aria-label="求史" xmlns="http://www.w3.org/2000/svg"> <path fill="currentColor" d="M76.34 10.04 L76.62 10.84 L76.74 11.70 L76.69 12.59 L76.47 13.48 L76.10 14.37 L75.58 15.22 L74.91 16.02 L74.13 16.74 L73.25 17.37 L72.28 17.89 L71.26 18.30 L70.21 18.57 L69.15 18.70 L68.12 18.70 L67.13 18.55 L66.21 18.27 L65.38 17.86 L64.67 17.33 L64.09 16.69 L63.66 15.96 L63.38 15.16 L63.26 14.30 L63.31 13.41 L63.53 12.52 L63.90 11.63 L64.42 10.78 L65.09 9.98 L65.87 9.26 L66.75 8.63 L67.72 8.11 L68.74 7.70 L69.79 7.43 L70.85 7.30 L71.88 7.30 L72.87 7.45 L73.79 7.73 L74.62 8.14 L75.33 8.67 L75.91 9.31 Z M20.56 38.96 L21.68 38.74 L23.04 38.46 L24.63 38.14 L26.40 37.77 L28.33 37.37 L30.40 36.94 L32.57 36.50 L34.82 36.05 L37.12 35.61 L39.45 35.17 L41.77 34.76 L44.05 34.37 L46.28 34.02 L48.42 33.72 L50.59 33.45 L52.91 33.19 L55.34 32.95 L57.83 32.72 L60.37 32.50 L62.90 32.30 L65.40 32.12 L67.83 31.94 L70.15 31.78 L72.33 31.64 L74.33 31.50 L76.11 31.38 L77.63 31.27 L78.87 31.18 L80.18 30.78 L81.34 30.05 L82.28 29.05 L82.92 27.84 L83.23 26.50 L83.18 25.13 L82.78 23.82 L82.05 22.66 L81.05 21.72 L79.84 21.08 L78.50 20.77 L77.13 20.82 L75.92 21.14 L74.44 21.54 L72.71 22.02 L70.78 22.55 L68.68 23.13 L66.44 23.75 L64.10 24.38 L61.68 25.03 L59.23 25.66 L56.77 26.28 L54.34 26.86 L51.98 27.40 L49.71 27.88 L47.58 28.28 L45.46 28.63 L43.25 28.95 L40.96 29.23 L38.63 29.49 L36.29 29.73 L33.96 29.94 L31.68 30.12 L29.47 30.30 L27.37 30.45 L25.40 30.59 L23.60 30.71 L21.98 30.83 L20.59 30.94 L19.44 31.04 L18.43 31.32 L17.53 31.85 L16.80 32.60 L16.29 33.50 L16.03 34.52 L16.04 35.56 L16.32 36.57 L16.85 37.47 L17.60 38.20 L18.50 38.71 L19.52 38.97 Z M25.63 56.95 L26.64 56.73 L27.88 56.45 L29.32 56.11 L30.95 55.74 L32.71 55.33 L34.60 54.89 L36.57 54.44 L38.60 53.99 L40.67 53.54 L42.73 53.11 L44.77 52.70 L46.76 52.33 L48.66 51.99 L50.45 51.71 L52.23 51.47 L54.08 51.26 L55.99 51.07 L57.93 50.90 L59.89 50.74 L61.82 50.61 L63.72 50.49 L65.55 50.38 L67.30 50.29 L68.93 50.20 L70.43 50.13 L71.77 50.06 L72.92 49.99 L73.86 49.93 L75.11 49.53 L76.21 48.83 L77.09 47.87 L77.70 46.72 L77.98 45.44 L77.93 44.14 L77.53 42.89 L76.83 41.79 L75.87 40.91 L74.72 40.30 L73.44 40.02 L72.14 40.07 L71.22 40.34 L70.11 40.67 L68.83 41.06 L67.40 41.50 L65.83 41.98 L64.16 42.49 L62.41 43.01 L60.59 43.54 L58.72 44.07 L56.84 44.58 L54.96 45.07 L53.10 45.53 L51.29 45.94 L49.55 46.29 L47.77 46.60 L45.87 46.89 L43.88 47.16 L41.82 47.41 L39.72 47.64 L37.63 47.86 L35.56 48.06 L33.54 48.24 L31.62 48.41 L29.81 48.56 L28.15 48.70 L26.67 48.83 L25.40 48.95 L24.37 49.05 L23.37 49.35 L22.48 49.89 L21.76 50.65 L21.26 51.57 L21.02 52.59 L21.05 53.63 L21.35 54.63 L21.89 55.52 L22.65 56.24 L23.57 56.74 L24.59 56.98 Z M20.75 75.18 L21.87 74.92 L23.23 74.58 L24.79 74.18 L26.54 73.73 L28.44 73.23 L30.47 72.71 L32.61 72.18 L34.83 71.64 L37.11 71.11 L39.43 70.59 L41.75 70.11 L44.05 69.67 L46.31 69.28 L48.49 68.96 L50.74 68.69 L53.16 68.46 L55.71 68.25 L58.36 68.08 L61.06 67.92 L63.76 67.79 L66.44 67.68 L69.05 67.59 L71.55 67.50 L73.89 67.43 L76.05 67.36 L77.97 67.30 L79.62 67.24 L80.96 67.18 L79.04 54.82 L77.76 55.17 L76.18 55.60 L74.33 56.12 L72.25 56.70 L69.99 57.33 L67.58 58.00 L65.06 58.69 L62.46 59.40 L59.84 60.09 L57.21 60.78 L54.63 61.42 L52.12 62.03 L49.74 62.57 L47.51 63.04 L45.32 63.46 L43.04 63.85 L40.71 64.21 L38.36 64.56 L36.00 64.87 L33.67 65.17 L31.39 65.45 L29.19 65.70 L27.10 65.93 L25.15 66.15 L23.36 66.34 L21.76 66.52 L20.38 66.68 L19.25 66.82 L18.19 67.15 L17.26 67.75 L16.51 68.57 L16.00 69.56 L15.76 70.64 L15.82 71.75 L16.15 72.81 L16.75 73.74 L17.57 74.49 L18.56 75.00 L19.64 75.24 Z M45.01 10.21 L45.02 11.03 L45.03 12.01 L45.05 13.12 L45.08 14.37 L45.10 15.72 L45.12 17.16 L45.15 18.69 L45.17 20.27 L45.19 21.90 L45.21 23.55 L45.23 25.22 L45.24 26.88 L45.25 28.51 L45.25 30.11 L45.25 31.72 L45.25 33.38 L45.24 35.08 L45.24 36.82 L45.23 38.59 L45.22 40.38 L45.20 42.19 L45.19 44.01 L45.17 45.84 L45.14 47.67 L45.11 49.50 L45.08 51.32 L45.04 53.12 L45.00 54.90 L44.95 56.73 L44.91 58.62 L44.85 60.56 L44.80 62.52 L44.74 64.50 L44.68 66.46 L44.61 68.40 L44.54 70.28 L44.47 72.10 L44.39 73.83 L44.30 75.45 L44.22 76.93 L44.13 78.26 L44.03 79.42 L43.94 80.44 L43.85 81.32 L43.77 82.04 L43.71 82.61 L43.66 83.04 L43.62 83.34 L43.62 83.54 L43.63 83.67 L43.65 83.78 L43.66 83.93 L43.61 84.14 L43.50 84.44 L43.31 84.83 L43.14 85.20 L43.05 85.50 L42.92 85.82 L42.66 86.23 L42.30 86.68 L41.86 87.16 L41.36 87.65 L40.83 88.13 L40.27 88.61 L39.72 89.07 L39.19 89.50 L38.68 89.90 L38.21 90.26 L37.80 90.59 L37.48 90.86 L37.21 91.03 L36.98 91.27 L36.83 91.56 L36.76 91.88 L36.77 92.20 L36.86 92.52 L37.03 92.79 L37.27 93.02 L37.56 93.17 L37.88 93.24 L38.20 93.23 L38.52 93.14 L38.87 93.10 L39.32 93.08 L39.87 93.06 L40.51 93.03 L41.22 92.99 L41.99 92.94 L42.80 92.87 L43.64 92.76 L44.51 92.62 L45.39 92.42 L46.28 92.16 L47.18 91.81 L48.07 91.34 L48.86 90.80 L49.44 90.36 L49.92 89.99 L50.40 89.57 L50.90 89.07 L51.39 88.49 L51.85 87.82 L52.26 87.09 L52.61 86.32 L52.91 85.51 L53.16 84.68 L53.38 83.78 L53.59 82.82 L53.78 81.77 L53.97 80.58 L54.14 79.22 L54.30 77.71 L54.43 76.09 L54.53 74.36 L54.62 72.55 L54.70 70.67 L54.76 68.73 L54.81 66.75 L54.86 64.75 L54.89 62.75 L54.92 60.77 L54.95 58.82 L54.97 56.92 L55.00 55.10 L55.02 53.29 L55.04 51.45 L55.06 49.61 L55.06 47.75 L55.06 45.89 L55.06 44.04 L55.05 42.19 L55.03 40.35 L55.00 38.53 L54.97 36.74 L54.93 34.97 L54.87 33.24 L54.82 31.54 L54.75 29.89 L54.66 28.23 L54.56 26.53 L54.44 24.83 L54.30 23.12 L54.16 21.44 L54.01 19.79 L53.85 18.19 L53.70 16.66 L53.55 15.21 L53.41 13.86 L53.28 12.62 L53.16 11.52 L53.07 10.57 L52.99 9.79 L52.80 8.76 L52.35 7.82 L51.67 7.02 L50.81 6.43 L49.83 6.09 L48.79 6.01 L47.76 6.20 L46.82 6.65 L46.02 7.33 L45.43 8.19 L45.09 9.17 Z"></path> <g transform="translate(104 0)"> <path fill="var(--accent)" d="M17.04 30.62 L17.10 30.94 L17.18 31.34 L17.27 31.79 L17.37 32.31 L17.48 32.87 L17.60 33.46 L17.72 34.09 L17.85 34.74 L17.98 35.39 L18.10 36.05 L18.22 36.71 L18.33 37.35 L18.44 37.97 L18.53 38.56 L18.62 39.15 L18.71 39.77 L18.80 40.41 L18.89 41.07 L18.97 41.74 L19.05 42.40 L19.13 43.05 L19.20 43.69 L19.27 44.29 L19.34 44.85 L19.40 45.37 L19.45 45.83 L19.50 46.23 L19.53 46.56 L19.83 47.69 L20.41 48.72 L21.24 49.55 L22.25 50.15 L23.38 50.46 L24.56 50.47 L25.69 50.17 L26.72 49.59 L27.55 48.76 L28.15 47.75 L28.46 46.62 L28.47 45.44 L28.42 45.12 L28.37 44.72 L28.31 44.26 L28.24 43.74 L28.16 43.18 L28.08 42.58 L28.00 41.95 L27.91 41.29 L27.83 40.63 L27.74 39.97 L27.66 39.30 L27.59 38.66 L27.52 38.03 L27.47 37.44 L27.41 36.85 L27.36 36.22 L27.32 35.57 L27.27 34.91 L27.23 34.24 L27.19 33.57 L27.15 32.91 L27.12 32.27 L27.08 31.67 L27.05 31.10 L27.03 30.58 L27.00 30.11 L26.98 29.71 L26.96 29.38 L26.63 28.12 L25.99 26.98 L25.07 26.05 L23.94 25.39 L22.69 25.05 L21.38 25.04 L20.12 25.37 L18.98 26.01 L18.05 26.93 L17.39 28.06 L17.05 29.31 Z M22.68 33.45 L23.73 33.23 L25.01 32.95 L26.50 32.62 L28.17 32.25 L29.98 31.85 L31.92 31.43 L33.95 30.99 L36.05 30.54 L38.19 30.10 L40.34 29.66 L42.47 29.25 L44.56 28.86 L46.58 28.51 L48.51 28.21 L50.48 27.91 L52.55 27.57 L54.67 27.22 L56.82 26.87 L58.98 26.53 L61.11 26.21 L63.19 25.93 L65.19 25.68 L67.08 25.50 L68.81 25.38 L70.34 25.34 L71.61 25.39 L72.55 25.50 L73.04 25.65 L73.08 25.74 L72.81 25.69 L72.45 25.47 L72.16 25.20 L72.02 25.06 L71.96 25.13 L71.91 25.43 L71.86 25.92 L71.78 26.56 L71.68 27.33 L71.58 28.21 L71.50 29.21 L71.46 30.31 L71.51 31.32 L71.57 31.95 L71.62 32.46 L71.66 33.05 L71.68 33.72 L71.70 34.42 L71.70 35.16 L71.69 35.91 L71.68 36.65 L71.66 37.38 L71.63 38.08 L71.60 38.75 L71.58 39.38 L71.55 39.97 L71.53 40.45 L71.54 41.62 L71.86 42.76 L72.45 43.77 L73.29 44.59 L74.31 45.17 L75.45 45.47 L76.62 45.46 L77.76 45.14 L78.77 44.55 L79.59 43.71 L80.17 42.69 L80.47 41.55 L80.55 41.22 L80.67 40.82 L80.84 40.29 L81.03 39.66 L81.24 38.95 L81.46 38.18 L81.68 37.34 L81.90 36.46 L82.10 35.54 L82.27 34.58 L82.41 33.59 L82.50 32.57 L82.53 31.53 L82.49 30.68 L82.47 30.19 L82.47 29.69 L82.49 28.99 L82.53 28.14 L82.55 27.15 L82.54 26.04 L82.46 24.82 L82.25 23.48 L81.85 22.02 L81.14 20.47 L80.03 18.97 L78.53 17.70 L76.79 16.82 L74.96 16.35 L73.15 16.21 L71.37 16.29 L69.56 16.52 L67.69 16.86 L65.75 17.29 L63.74 17.79 L61.68 18.32 L59.59 18.89 L57.48 19.46 L55.38 20.02 L53.30 20.56 L51.28 21.04 L49.34 21.46 L47.49 21.79 L45.59 22.08 L43.56 22.35 L41.45 22.61 L39.29 22.86 L37.11 23.09 L34.94 23.31 L32.80 23.51 L30.73 23.70 L28.75 23.88 L26.90 24.04 L25.20 24.19 L23.69 24.33 L22.38 24.45 L21.32 24.55 L20.19 24.88 L19.18 25.49 L18.37 26.34 L17.81 27.37 L17.53 28.51 L17.55 29.68 L17.88 30.81 L18.49 31.82 L19.34 32.63 L20.37 33.19 L21.51 33.47 Z M24.46 49.97 L25.51 49.81 L26.80 49.59 L28.29 49.34 L29.96 49.05 L31.78 48.74 L33.73 48.41 L35.77 48.07 L37.87 47.73 L40.02 47.39 L42.17 47.06 L44.31 46.74 L46.40 46.46 L48.42 46.20 L50.34 45.98 L52.27 45.79 L54.30 45.62 L56.41 45.47 L58.56 45.32 L60.74 45.20 L62.91 45.08 L65.05 44.98 L67.12 44.88 L69.09 44.80 L70.94 44.72 L72.63 44.65 L74.15 44.59 L75.45 44.53 L76.52 44.47 L77.66 44.18 L78.68 43.61 L79.53 42.80 L80.13 41.79 L80.45 40.66 L80.47 39.48 L80.18 38.34 L79.61 37.32 L78.80 36.47 L77.79 35.87 L76.66 35.55 L75.48 35.53 L74.44 35.72 L73.15 35.96 L71.66 36.24 L70.00 36.56 L68.18 36.90 L66.24 37.27 L64.20 37.65 L62.10 38.03 L59.96 38.42 L57.81 38.79 L55.68 39.14 L53.59 39.47 L51.57 39.76 L49.66 40.02 L47.74 40.24 L45.71 40.45 L43.61 40.65 L41.45 40.83 L39.28 41.00 L37.11 41.16 L34.98 41.30 L32.92 41.44 L30.95 41.56 L29.11 41.67 L27.42 41.77 L25.90 41.87 L24.60 41.95 L23.54 42.03 L22.53 42.28 L21.62 42.79 L20.87 43.51 L20.33 44.41 L20.04 45.41 L20.03 46.46 L20.28 47.47 L20.79 48.38 L21.51 49.13 L22.41 49.67 L23.41 49.96 Z"></path> <path fill="currentColor" d="M45.00 5.00 L44.98 5.50 L44.95 6.06 L44.92 6.69 L44.89 7.39 L44.85 8.15 L44.81 8.98 L44.77 9.88 L44.72 10.84 L44.68 11.86 L44.64 12.96 L44.60 14.12 L44.56 15.35 L44.53 16.64 L44.50 18.01 L44.48 19.51 L44.47 21.19 L44.47 23.00 L44.47 24.91 L44.47 26.91 L44.48 28.96 L44.48 31.04 L44.48 33.11 L44.48 35.15 L44.46 37.12 L44.43 39.00 L44.39 40.76 L44.33 42.35 L44.25 43.79 L44.17 45.11 L44.09 46.33 L44.02 47.42 L43.95 48.38 L43.87 49.23 L43.78 49.97 L43.69 50.63 L43.58 51.21 L43.46 51.76 L43.32 52.30 L43.16 52.87 L42.96 53.49 L42.71 54.21 L42.40 55.04 L42.04 55.96 L41.64 56.93 L41.21 57.93 L40.74 58.96 L40.25 60.00 L39.73 61.05 L39.17 62.11 L38.58 63.17 L37.97 64.23 L37.32 65.28 L36.64 66.32 L35.92 67.34 L35.18 68.33 L34.41 69.28 L33.57 70.24 L32.58 71.27 L31.43 72.36 L30.18 73.48 L28.86 74.62 L27.49 75.76 L26.10 76.88 L24.73 77.96 L23.40 79.00 L22.14 79.97 L20.97 80.86 L19.93 81.67 L19.03 82.37 L18.33 82.95 L18.08 83.16 L17.89 83.43 L17.78 83.73 L17.75 84.06 L17.81 84.38 L17.95 84.67 L18.16 84.92 L18.43 85.11 L18.73 85.22 L19.06 85.25 L19.38 85.19 L19.67 85.05 L20.47 84.67 L21.46 84.21 L22.65 83.69 L23.99 83.10 L25.46 82.45 L27.02 81.75 L28.65 81.00 L30.31 80.21 L31.99 79.38 L33.65 78.51 L35.26 77.62 L36.81 76.68 L38.26 75.72 L39.59 74.72 L40.78 73.70 L41.91 72.66 L43.00 71.58 L44.03 70.47 L45.01 69.33 L45.95 68.18 L46.83 67.01 L47.66 65.84 L48.44 64.67 L49.17 63.50 L49.86 62.34 L50.49 61.19 L51.07 60.07 L51.60 58.96 L52.08 57.87 L52.49 56.81 L52.83 55.77 L53.10 54.74 L53.31 53.73 L53.46 52.73 L53.56 51.75 L53.62 50.78 L53.65 49.81 L53.67 48.82 L53.67 47.80 L53.68 46.71 L53.70 45.53 L53.75 44.21 L53.79 42.67 L53.82 40.95 L53.83 39.11 L53.83 37.16 L53.82 35.13 L53.80 33.06 L53.77 30.96 L53.73 28.87 L53.69 26.81 L53.65 24.81 L53.61 22.90 L53.57 21.10 L53.53 19.46 L53.50 17.99 L53.47 16.64 L53.44 15.35 L53.40 14.12 L53.36 12.96 L53.32 11.86 L53.28 10.84 L53.23 9.88 L53.19 8.98 L53.15 8.15 L53.11 7.39 L53.08 6.69 L53.05 6.06 L53.02 5.50 L53.00 5.00 L52.86 3.96 L52.46 3.00 L51.83 2.17 L51.00 1.54 L50.04 1.14 L49.00 1.00 L47.96 1.14 L47.00 1.54 L46.17 2.17 L45.54 3.00 L45.14 3.96 Z M47.67 59.94 L48.30 59.79 L49.08 59.59 L49.99 59.35 L51.02 59.07 L52.13 58.78 L53.30 58.47 L54.52 58.15 L55.76 57.84 L57.01 57.54 L58.22 57.25 L59.39 56.99 L60.49 56.77 L61.49 56.60 L62.37 56.48 L63.17 56.41 L63.96 56.38 L64.73 56.38 L65.48 56.42 L66.20 56.48 L66.89 56.56 L67.56 56.65 L68.19 56.76 L68.78 56.86 L69.34 56.97 L69.86 57.06 L70.34 57.14 L70.80 57.21 L71.19 57.25 L72.28 57.05 L73.29 56.58 L74.14 55.87 L74.77 54.96 L75.15 53.92 L75.25 52.81 L75.05 51.72 L74.58 50.71 L73.87 49.86 L72.96 49.23 L71.92 48.85 L70.81 48.75 L70.50 48.82 L70.13 48.91 L69.69 49.01 L69.18 49.13 L68.61 49.26 L67.99 49.39 L67.32 49.53 L66.60 49.68 L65.85 49.83 L65.07 49.97 L64.25 50.12 L63.40 50.26 L62.53 50.40 L61.63 50.52 L60.66 50.65 L59.59 50.77 L58.43 50.90 L57.21 51.03 L55.94 51.16 L54.64 51.29 L53.35 51.41 L52.08 51.53 L50.87 51.64 L49.72 51.75 L48.67 51.84 L47.73 51.93 L46.95 52.00 L46.33 52.06 L45.33 52.37 L44.45 52.92 L43.74 53.69 L43.25 54.61 L43.02 55.63 L43.06 56.67 L43.37 57.67 L43.92 58.55 L44.69 59.26 L45.61 59.75 L46.63 59.98 Z M67.47 50.63 L67.19 51.11 L66.85 51.70 L66.49 52.35 L66.10 53.05 L65.69 53.81 L65.25 54.60 L64.79 55.41 L64.32 56.23 L63.84 57.05 L63.35 57.85 L62.87 58.61 L62.40 59.32 L61.95 59.96 L61.53 60.53 L61.08 61.07 L60.54 61.66 L59.93 62.28 L59.26 62.93 L58.56 63.57 L57.83 64.22 L57.10 64.85 L56.37 65.47 L55.66 66.05 L54.99 66.61 L54.36 67.12 L53.79 67.58 L53.29 67.99 L52.89 68.34 L52.49 68.68 L52.20 69.12 L52.04 69.61 L52.00 70.13 L52.11 70.65 L52.34 71.11 L52.68 71.51 L53.12 71.80 L53.61 71.96 L54.13 72.00 L54.65 71.89 L55.11 71.66 L55.54 71.45 L56.07 71.21 L56.71 70.92 L57.45 70.59 L58.25 70.22 L59.12 69.83 L60.03 69.40 L60.97 68.93 L61.92 68.44 L62.88 67.92 L63.82 67.37 L64.74 66.78 L65.63 66.15 L66.47 65.47 L67.27 64.74 L68.04 63.96 L68.78 63.14 L69.49 62.29 L70.18 61.43 L70.83 60.57 L71.46 59.72 L72.05 58.89 L72.59 58.11 L73.10 57.38 L73.55 56.72 L73.94 56.16 L74.26 55.72 L74.53 55.37 L75.02 54.37 L75.24 53.29 L75.17 52.18 L74.82 51.13 L74.20 50.20 L73.37 49.47 L72.37 48.98 L71.29 48.76 L70.18 48.83 L69.13 49.18 L68.20 49.80 Z M28.88 62.95 L29.41 63.34 L30.05 63.80 L30.79 64.34 L31.62 64.95 L32.52 65.61 L33.49 66.31 L34.50 67.05 L35.56 67.82 L36.64 68.61 L37.74 69.40 L38.84 70.20 L39.93 70.98 L40.99 71.74 L42.02 72.48 L43.04 73.20 L44.07 73.93 L45.12 74.67 L46.19 75.43 L47.27 76.19 L48.37 76.95 L49.47 77.72 L50.58 78.50 L51.70 79.27 L52.82 80.04 L53.94 80.81 L55.07 81.57 L56.19 82.33 L57.28 83.06 L58.32 83.79 L59.34 84.53 L60.38 85.30 L61.44 86.09 L62.51 86.90 L63.61 87.71 L64.73 88.52 L65.88 89.32 L67.07 90.10 L68.29 90.85 L69.57 91.57 L70.89 92.24 L72.26 92.86 L73.72 93.41 L75.26 93.87 L76.84 94.23 L78.40 94.51 L79.95 94.70 L81.47 94.84 L82.95 94.93 L84.37 94.97 L85.72 94.99 L86.99 94.99 L88.15 94.98 L89.18 94.96 L90.06 94.95 L90.73 94.94 L91.28 94.96 L92.72 81.04 L91.97 80.92 L91.05 80.80 L90.08 80.67 L89.04 80.52 L87.94 80.37 L86.80 80.20 L85.63 80.03 L84.45 79.84 L83.27 79.64 L82.12 79.43 L81.03 79.22 L80.01 79.00 L79.10 78.79 L78.28 78.59 L77.45 78.38 L76.54 78.12 L75.58 77.83 L74.56 77.51 L73.51 77.15 L72.41 76.77 L71.27 76.36 L70.11 75.92 L68.92 75.45 L67.71 74.97 L66.47 74.47 L65.23 73.96 L63.97 73.45 L62.72 72.94 L61.52 72.44 L60.33 71.94 L59.13 71.43 L57.92 70.90 L56.71 70.37 L55.49 69.82 L54.28 69.28 L53.07 68.73 L51.86 68.18 L50.66 67.63 L49.47 67.09 L48.29 66.55 L47.12 66.03 L45.98 65.52 L44.82 65.01 L43.62 64.49 L42.40 63.95 L41.16 63.41 L39.92 62.87 L38.69 62.34 L37.50 61.82 L36.35 61.32 L35.25 60.84 L34.23 60.40 L33.29 59.99 L32.44 59.62 L31.72 59.31 L31.12 59.05 L30.57 58.82 L29.99 58.75 L29.41 58.83 L28.87 59.06 L28.40 59.42 L28.05 59.88 L27.82 60.43 L27.75 61.01 L27.83 61.59 L28.06 62.13 L28.42 62.60 Z"></path> </g> </svg>Qiushi Papers<span>Tested on History</span></p> <h1 class="page-title">Can Individual Investors Earn Excess Returns from Public Data? A Research Report on 116 Pre-Registered Tests</h1> <div class="post-meta mono" data-pagefind-ignore> <time datetime="2026-10-12T00:00:00.000Z">2026-10-12</time> <span>53 min read</span>  </div> <p class="print-only print-byline">LuluH<span> (Research report, October 2026)</span></p> </header> <section class="paper-info" aria-label="Article information" data-slug="116-rounds-report-en" data-pagefind-ignore data-copy="Copy" data-copied="Copied" data-copy-fail="Copy failed"> <dl class="pi-meta"> <div><dt>Journal</dt><dd><a href="/en/">Qiushi Papers</a></dd></div> <div><dt>Author</dt><dd>LuluH</dd></div> <div><dt>Type</dt><dd>Research report (not peer reviewed)</dd></div> <div><dt>Published</dt><dd><time datetime="2026-10-12">2026-10-12</time></dd></div>  <div><dt>Length</dt><dd>about 7,300 words, PDF 33 pages</dd></div> </dl> <div class="pi-actions"> <a class="pi-btn pi-primary" href="https://luluh.top/api/dl/116-rounds-report-en" download="Can Individual Investors Earn Excess Returns from Public Data (LuluH, 2026).pdf"> <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg> Download PDF<span class="pi-sub">1.3 MB</span> </a>  <a class="pi-btn" href="#cite" data-open-cite aria-controls="cite" aria-expanded="false">Cite</a> <div class="pi-stats" aria-live="polite"> <span>Views <b data-stat="view">—</b></span> <span>Downloads <b data-stat="download">—</b></span> </div> </div> <div class="pi-cite" id="cite" hidden> <div class="pi-format"> <div class="pi-format-head"><span>APA (7th ed.)</span><button type="button" class="pi-copy" data-copy="apa">Copy</button></div> <p data-cite="apa">LuluH. (2026). Can Individual Investors Earn Excess Returns from Public Data? A Research Report on 116 Pre-Registered Tests [Research report]. Qiushi Papers. https://qiushi.luluh.top/en/116-rounds-report/</p> </div><div class="pi-format"> <div class="pi-format-head"><span>Chicago (author-date)</span><button type="button" class="pi-copy" data-copy="chicago">Copy</button></div> <p data-cite="chicago">LuluH. 2026. “Can Individual Investors Earn Excess Returns from Public Data? A Research Report on 116 Pre-Registered Tests.” Research report, Qiushi Papers, October 12, 2026. https://qiushi.luluh.top/en/116-rounds-report/.</p> </div> <div class="pi-format"> <div class="pi-format-head"><span>BibTeX</span><button type="button" class="pi-copy" data-copy="bib">Copy</button></div> <pre data-cite="bib">@article{luluh2026116en,
+  author       = {LuluH},
+  title        = {Can Individual Investors Earn Excess Returns from Public Data? A Research Report on 116 Pre-Registered Tests},
+  journal      = {Qiushi Papers},
+  year         = {2026},
+  month        = {10},
+  note         = {Research report, not peer reviewed},
+  url          = {https://qiushi.luluh.top/en/116-rounds-report/},
+  urldate      = {2026-11-21},
+  language     = {english},
+}</pre> </div> <p class="pi-files"> Export to a reference manager:  <a href="https://qiushi.luluh.top/en/cite/116-rounds-report.ris" download="luluh2026116en.ris">RIS</a> (EndNote, Zotero, Mendeley) ·
+<a href="https://qiushi.luluh.top/en/cite/116-rounds-report.bib" download="luluh2026116en.bib">BibTeX</a> </p> </div> </section> <script type="module">const e=document.querySelector(".paper-info");if(e){const o=e.dataset.slug,u=location.hostname.endsWith("github.io")?"https://luluh.top":"",n=new Date,i=`${n.getFullYear()}-${String(n.getMonth()+1).padStart(2,"0")}-${String(n.getDate()).padStart(2,"0")}`;e.querySelectorAll('[data-cite="gbt"]').forEach(t=>{t.textContent=t.textContent.replace(/(, \d{4})\[\d{4}-\d{2}-\d{2}\]/,`$1[${i}]`)}),e.querySelectorAll('[data-cite="bib"]').forEach(t=>{t.textContent=t.textContent.replace(/urldate(\s*)= \{[\d-]+\}/,`urldate$1= {${i}}`)}),e.querySelectorAll(".pi-copy").forEach(t=>{t.addEventListener("click",async()=>{const a=e.querySelector(`[data-cite="${t.dataset.copy}"]`);try{await navigator.clipboard.writeText(a.textContent.trim()),t.textContent=e.dataset.copied}catch{t.textContent=e.dataset.copyFail}setTimeout(()=>t.textContent=e.dataset.copy,1500)})});const s=e.querySelector("#cite"),c=e.querySelector("[data-open-cite]"),d=t=>{s.hidden=!t,c.setAttribute("aria-expanded",String(t)),c.classList.toggle("is-open",t)};c.addEventListener("click",t=>{t.preventDefault(),d(s.hidden)}),location.hash==="#cite"&&d(!0);const h=t=>{e.querySelectorAll("[data-stat]").forEach(a=>{const l=t[a.dataset.stat];typeof l=="number"&&(a.textContent=l.toLocaleString(document.documentElement.lang||"zh-CN"))})};let r=!1;try{r=sessionStorage.getItem(`viewed:${o}`)==="1"}catch{}fetch(`${u}/api/stats/${o}${r?"":"/view"}`,{method:r?"GET":"POST"}).then(t=>t.ok?t.json():Promise.reject()).then(t=>{h(t);try{sessionStorage.setItem(`viewed:${o}`,"1")}catch{}}).catch(()=>{}),e.querySelector(".pi-primary")?.addEventListener("click",()=>{const t=e.querySelector('[data-stat="download"]'),a=Number((t?.textContent||"").replace(/,/g,""));t&&!Number.isNaN(a)&&(t.textContent=(a+1).toLocaleString(document.documentElement.lang||"zh-CN"))})}</script> <p class="print-only print-cite"><b>Cite as: </b>LuluH. (2026). Can Individual Investors Earn Excess Returns from Public Data? A Research Report on 116 Pre-Registered Tests [Research report]. Qiushi Papers. https://qiushi.luluh.top/en/116-rounds-report/</p> <nav class="toc" aria-label="Contents" data-pagefind-ignore> <p class="toc-title">Contents</p> <ul> <li><a href="#the-one-page-conclusion-the-final-choice">The one-page conclusion: the final choice</a></li><li><a href="#abstract">Abstract</a></li><li><a href="#1-introduction">1 Introduction</a></li><li><a href="#2-research-design-and-data">2 Research design and data</a></li><li><a href="#3-us-market-timing-the-moving-average-voting-rule">3 US market timing: the moving-average voting rule</a></li><li><a href="#4-stock-selection-and-anomalies">4 Stock selection and anomalies</a></li><li><a href="#5-chinese-mutual-fund-enhanced-index-funds">5 Chinese mutual-fund enhanced index funds</a></li><li><a href="#6-other-assets-and-strategies">6 Other assets and strategies</a></li><li><a href="#7-investor-level-questions">7 Investor-level questions</a></li><li><a href="#8-research-credibility">8 Research credibility</a></li><li><a href="#9-conclusion">9 Conclusion</a></li><li><a href="#references">References</a></li><li><a href="#appendix-all-116-rounds-at-a-glance">Appendix: all 116 rounds at a glance</a></li> </ul> </nav> <div class="prose"> <blockquote>
+<p>This is the English edition of the research report dated October 12, 2026, translated from the Chinese original (<a href="https://qiushi.luluh.top/116-rounds-report/">中文版</a>, <a href="/docs/116-rounds-report.pdf">Chinese PDF</a>). If the two differ, the Chinese version prevails.</p>
+</blockquote>
+<h2 id="the-one-page-conclusion-the-final-choice">The one-page conclusion: the final choice</h2>
+<p><strong>The final choice after 116 rounds of research is the simplest setup: in US dollars, hold an all-world stock ETF forever; in renminbi, buy a few low-fee CSI 1000 (中证 1000) enhanced index funds; invest new money as soon as you have it; no market timing.</strong> None of the other approaches studied did better once costs and taxes were deducted.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Money</th>
+<th>Final choice</th>
+<th>Why (relevant rounds)</th>
+<th>What to expect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>US dollars</strong></td>
+<td><strong>Hold an Ireland-domiciled, accumulating all-world stock ETF (VWRA or FWRA) forever</strong>, with no market timing and no rebalancing</td>
+<td>Betting on a single country and holding for 30 years has a 12.4% probability of losing money after inflation, versus 0% for a global portfolio (round 101); if you never sell there is no taxable income, and no US estate tax (美国遗产税) is due (round 100); the moving-average timing rule does the same as buy and hold after tax (round 54)</td>
+<td>Returns equal the global stock market; a crisis like 2008 would cut it in half, and it could take as long as 11 years to get back to where you started</td>
+</tr>
+<tr>
+<td><strong>Renminbi (Alipay / Tiantian Fund (天天基金))</strong></td>
+<td><strong>3–5 low-fee CSI 1000 enhanced index funds (指数增强基金, “指增”), Class A shares, plain regular investing (普通定投)</strong>; spread across different fund companies; optionally put about 1/4 in a government bond ETF or Yu’e Bao (余额宝) to lose less, and rebalance to the target weights at the end of each year</td>
+<td>Even after removing IPO subscription (打新) income, they still beat the index by 3–7 percentage points a year in 2023–2025 (rounds 21, 53); lower-fee funds do better (round 57); 3–5 funds are enough to diversify (round 47), and products from the same company rise and fall together (round 112); rebalancing once a year is enough (round 109); with 1/4 in government bonds, drawdown is −27% vs −36% (round 75)</td>
+<td>About 3–5 percentage points a year above the CSI 1000; crowding by private funds (私募) may squeeze this out, so give it a checkup every October (round 102)</td>
+</tr>
+<tr>
+<td>Binance (币安) (optional)</td>
+<td>BTC cash-and-carry (basis) arbitrage (long spot + short perpetual)</td>
+<td>2020–2026 annualized 9.8% vs 3.1% for short-term bonds (round 22)</td>
+<td>Over the last 12 months, roughly equal to short-term bonds; exchange risk cannot be measured</td>
+</tr>
+<tr>
+<td>New money</td>
+<td><strong>Buy a fixed amount as soon as you have it</strong></td>
+<td>Waiting for a 20% drop before buying leaves you about 3% worse off on average (round 104); in a fair comparison, “smart” regular investing (智能定投) adds only 0.4% (round 105)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Don’t</td>
+<td>Stock picking, limit-up chasing (打板), chasing newly listed coins, valuation-based timing, large/small-cap rotation (二八轮动), grid trading, switching funds based on last year’s performance, holding with leverage for the long term, adding a small-cap value tilt</td>
+<td>After costs, all do worse than buying the index, or stopped working after they became popular (Sections 4, 6, 7)</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The three most important findings:</strong></p>
+<ol>
+<li><strong>Only one source of excess return can be reliably captured</strong>: CSI 1000 enhanced index funds (about 3–5 percentage points a year). The other 100-plus approaches either earn less after costs or stopped working once they became public and popular.</li>
+<li><strong>Tax changes the answer</strong>: the moving-average timing rule reduces drawdowns in 10 markets, but for a Chinese resident who holds forever and files taxes as required, the 20% tax due on sales wipes out its return advantage, so buy and hold is the choice.</li>
+<li><strong>Betting on a single country (including the US) carries real risk</strong>: across 16 developed countries over 150 years, the probability of losing money after inflation over a 30-year holding period is one in eight; a globally diversified portfolio never lost, and it did not earn less.</li>
+</ol>
+<h2 id="abstract">Abstract</h2>
+<p>This paper uses free public data to run 116 rounds of tests of whether an individual investor with very little capital who is a Chinese tax resident (中国税收居民) can reliably earn excess returns (September 28 to October 12, 2026; the data for round 113 could not be obtained). In every round, the hypothesis, the pass/fail criteria and a prior probability were registered in the research log before the data were examined; all results are net of trading costs, and those involving overseas assets are further calculated under Chinese individual income tax. There are five main findings.</p>
+<p>First, US market timing: a “three-moving-average voting” rule chosen on 1927–1989 data returned 11.77% annualized out of sample in 1990–2026, versus 11.01% for the S&#x26;P 500, with maximum drawdowns of −37% vs −55%; applied unchanged to 4 developed-market regions outside the US and to 4 emerging markets, the rule held up. But its return advantage ranges from 0 to +1.1 percentage points depending on the rebalancing day, it has lagged by about 0.8 a year since 2009, and it is not significant after accounting for selection luck (Deflated Sharpe 0.01). It is “insurance against long bear markets,” not a reliable source of excess return.</p>
+<p>Second, stock selection and anomalies: most of the 212 published US anomalies decayed after publication and are concentrated in small caps; the predictive power of A-share price-volume signals and of a self-built machine-learning model (monthly rank IC 0.11) is concentrated on the loser side, and long-only versions do not earn significant excess returns. Among company-announcement signals, buying after a large positive earnings pre-announcement (业绩预告) yields an excess return of +1.50% over 60 trading days (t = 2.82), but this has been negative in 2022–2025.</p>
+<p>Third, Chinese mutual-fund (公募) enhanced index funds: in 2023–2025, CSI 1000 enhanced funds beat index ETFs by 4–8 percentage points a year after fees. After removing IPO income using about 100,000 offline IPO allocation (网下打新) records, the excess returns of CSI 300 and CSI 500 enhanced funds largely disappear, while CSI 1000 enhanced funds still have about 3.2% (t = 2.7) after controlling for size, turnover and low beta.</p>
+<p>Fourth, tax and investment horizon change the optimal choice: when holding forever and filing as required, the timing rule’s after-tax return is the same as buy and hold (+0.03 percentage points a year); data for 16 developed countries in 1870–2020 show that betting on a single country and holding for 30 years has a 12.4% probability of a real loss, versus 0 for a global portfolio.</p>
+<p>Fifth, the credibility of the research itself: 67 prior-probability forecasts averaged 38%, while 31% actually occurred; the Brier score was 0.145 (baseline 0.215), with systematic over-optimism that “my own idea will pass.”</p>
+<p>The conclusion: for a small Chinese individual investor, very little excess return can be reliably captured from public data; the most valuable findings are what not to do, and the allocation choices that follow from tax, horizon and diversification across countries.</p>
+<p><strong>Abstract (English).</strong> Using only free public data, I ran more than 110 pre-registered tests (28 Sep – 12 Oct 2026) of whether a small Chinese retail investor can earn reliable excess returns after costs and Chinese personal income tax. Each test recorded its hypothesis, pass/fail rule and a prior probability before the data were examined. A three-moving-average timing rule chosen on 1927–1989 US data cut drawdowns out of sample (−37% vs −55% for 1990–2026) and replicated in eight other markets, but its return edge is small, not significant after selection (Deflated Sharpe 0.01), and disappears after tax for a buy-and-never-sell investor. Published anomalies, A-share price signals and machine-learning forecasts were concentrated on the short side. The one robust long-only source was CSI 1000 enhanced index funds: after removing IPO-allocation income, size and turnover factors and low beta, their alpha is about 3.2% a year (t = 2.7), while CSI 300/500 enhanced funds’ excess returns were largely IPO income. JST data for 16 countries (1870–2020) show a 12.4% chance of a negative real 30-year return for a single country versus none for a global portfolio. The result is a simpler plan than the one the project started with: a global accumulating ETF held forever, plus a few low-fee CSI 1000 enhanced funds.</p>
+<h2 id="1-introduction">1 Introduction</h2>
+<p>The question this study tries to answer is: can a Chinese individual investor who uses only public data and has very little capital (a few thousand US dollars at most) reliably earn more, after costs and taxes, than “what they would have done anyway” (buying an index, parking money in a money market fund)? Small capital means that minimum commissions, whole-share lots and subscription minimums all eat into thin edges; tax-resident status means that gains from overseas sales and dividends must be reported at 20%; the available channels are US brokers, A-shares and over-the-counter funds (场外基金), and cryptocurrency exchanges; convertible bonds, Southbound Stock Connect (港股通), exchange-traded options and the like have minimum-asset requirements, so a small account cannot open them.</p>
+<p>The literature offers three pieces of background for this question. First, many published return anomalies decay after publication (McLean and Pontiff 2016) and are concentrated in small caps, where trading costs are high (Hou, Xue and Zhang 2020). Second, the more rules a backtest tries, the less credible the statistical significance of the best result (Harvey, Liu and Zhu 2016; Bailey and López de Prado 2014). Third, individual investors’ actual returns are often eaten up by trading, attention-driven buying and taxes (Barber and Odean 2000, 2008). This study treats these three points as methodological constraints rather than conclusions.</p>
+<p>This paper makes three contributions.</p>
+<ol>
+<li>Within a single pre-registered framework, it compares US stocks, A-shares, mutual funds, cryptocurrencies, arbitrage and allocation questions on the same basis, and honestly reports all 116 rounds (most of which did not pass).</li>
+<li>It rebuilds, with free data, several analyses that usually require commercial databases: reconstructing the IPO income of mutual-fund enhanced index funds from offline allocation details, recovering liquidated funds, and measuring crowding among quantitative private funds (量化私募); and reconstructing point-in-time financial statements from SEC XBRL.</li>
+<li>It brings Chinese individual income tax, a perpetual holding horizon and US estate tax into the strategy comparison, showing that the same rule can lead to opposite conclusions for different investors.</li>
+</ol>
+<p>Section 2 describes the research design and data; Sections 3–7 report results by topic (US market timing, stock selection and anomalies, enhanced index funds, other assets, investor-level questions); Section 8 discusses credibility and limitations; Section 9 concludes. The appendix lists all 116 rounds.</p>
+<h2 id="2-research-design-and-data">2 Research design and data</h2>
+<p>All 116 rounds followed the same process, with each step recorded in the research log in time order; the pass/fail criteria were written down before the results were seen and were not changed after the results came out.</p>
+<p><img src="/img/116-rounds/en/fig1.svg" alt="The research process for each round · 5 steps, with a marginal-payoff check every 3 rounds"></p>
+<p><em>The research process for each round · 5 steps, with a marginal-payoff check every 3 rounds</em></p>
+<h3 id="21-pre-registration">2.1 Pre-registration</h3>
+<p>Each round’s registration includes: why it is being done; what has already been seen (a contamination statement); sample, definitions and costs; pass/fail criteria; items that are only described and do not count toward the verdict; and the expected result and prior probability. A data check is done before the results are viewed, and changes to definitions can be made only at this step. Checks thought of only after seeing the results are labeled separately as “post hoc” and serve only as a reference; for example, after round 98 found that the earnings pre-announcement table excluded delisted companies, it recalculated using “stocks that survived to today” as the benchmark, but did not change the original verdict.</p>
+<h3 id="22-out-of-sample-and-multiple-testing">2.2 Out of sample and multiple testing</h3>
+<ul>
+<li><strong>Splits:</strong> the US market-timing rule was chosen on 1927–1989 and tested on 1990–2026; the A-share machine-learning model was explored on 2006–2016 and, once finalized, tested only once on the hold-out period from 2016-10 onward.</li>
+<li><strong>Corrections:</strong> multiple tests within one round use the Holm correction; rules picked from many candidates use the Deflated Sharpe Ratio; stock-selection rules use a permutation test (randomly picking stocks from the same candidate pool, repeated one hundred times).</li>
+<li><strong>Discipline:</strong> directions already rejected are not retried with different parameters; a marginal-payoff check is written every 3 rounds, and if the gain is too small, the research switches to a different broad direction.</li>
+</ul>
+<h3 id="23-costs-and-taxes">2.3 Costs and taxes</h3>
+<p>All results are net of trading costs. A-share event studies assume a round-trip cost of 0.25% (commission of 0.05% (万五), stamp duty on sales, market impact), and note the effect of the 5-yuan minimum per trade on small accounts; funds use after-fee net asset values. Overseas assets follow the Chinese individual income tax treatment: 20% on dividends and on gains from sales (the 10% US withholding under the China–US tax treaty is creditable), with gains and losses offset within the same tax year and no carryforward across years; the main specification assumes filing as required.</p>
+<h3 id="24-data">2.4 Data</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Where used</th>
+<th>Biases and handling</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ken French Data Library (US daily from 1926, international from 1990)</td>
+<td>Market timing, factors, regular investing</td>
+<td>Modeled ETFs; checked against real ETFs from 2007</td>
+</tr>
+<tr>
+<td>Chen–Zimmermann open-source anomaly data (212 anomalies)</td>
+<td>Decay before vs after publication</td>
+<td>Portfolios rebalanced once a year used only for accounting signals</td>
+</tr>
+<tr>
+<td>SEC XBRL point-in-time financial statements</td>
+<td>S&#x26;P 500 profitability factor</td>
+<td>Reconstructed by filing date; stock splits and share-unit errors handled</td>
+</tr>
+<tr>
+<td>JST Macrohistory Database (16 countries, 1870–2020)</td>
+<td>Single-country risk</td>
+<td>Only countries that are rich today; Germany 1922–1924 excluded</td>
+</tr>
+<tr>
+<td>Tiantian Fund, East Money (东方财富) Data Center</td>
+<td>Enhanced index funds, offline IPO allocation, earnings pre-announcements, shareholder counts</td>
+<td>Some tables exclude delisted companies → survivor benchmark; liquidated funds recovered via allocation-account codes (配售对象编码)</td>
+</tr>
+<tr>
+<td>Tencent unadjusted daily prices + baostock adjustment factors</td>
+<td>A-share price-volume and event studies</td>
+<td>Tencent’s adjusted prices use additive adjustment, so returns are wrong; switched to proportional adjustment</td>
+</tr>
+<tr>
+<td>China Securities Index (中证指数) website, China Financial Futures Exchange (中金所)</td>
+<td>Index backtests, futures discount</td>
+<td>Pre-launch backfilled data have selection bias, tested separately</td>
+</tr>
+<tr>
+<td>Yahoo Finance, Binance, FRED</td>
+<td>Real ETFs, cryptocurrencies, exchange rates and interest rates</td>
+<td>Binance data include delisted coins; noise from differing London closing times noted separately</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="3-us-market-timing-the-moving-average-voting-rule">3 US market timing: the moving-average voting rule</h2>
+<p>Only one US market-timing rule survived, and its reliable value is reducing drawdowns, not earning more: out of sample in 1990–2026 it returned 11.77% annualized vs 11.01% for the S&#x26;P 500, with maximum drawdowns of −37% vs −55%.</p>
+<h3 id="31-the-rule-and-the-out-of-sample-test">3.1 The rule and the out-of-sample test</h3>
+<p>The rule (called v3) looks only at how many of the 150-, 200- and 250-day moving averages the S&#x26;P 500’s closing price is above: 0, 1, 2 or 3 correspond to 0.5, 0.75, 1 or 1.25 times equity exposure, implemented with 1x and 2x ETFs plus Treasuries; it is checked once at each month-end, and trades only when the deviation from target exceeds a tolerance. The rule was selected from about 330 candidate combinations on Ken French daily data for 1927–1989; data after 1990 had not been looked at before it was chosen.</p>
+<p>The best in-sample candidates were of the “volatility targeting” type (adjusting exposure to recent volatility), and they all failed out of sample; pure trend (selling everything below the 200-day line) earned less than holding out of sample. Neither type was retried afterward.</p>
+<h3 id="32-replication-in-other-markets">3.2 Replication in other markets</h3>
+<p><img src="/img/116-rounds/fig2.png" alt="Reported in rounds 3, 12, 14, 83 · US 1990–2026 out of sample; other developed regions 1991–2026; India, Brazil, South Korea, Taiwan 1996/1998–2026 (in US dollars); Shanghai Composite 1992–2026"></p>
+<p><em>Reported in rounds 3, 12, 14, 83 · US 1990–2026 out of sample; other developed regions 1991–2026; India, Brazil, South Korea, Taiwan 1996/1998–2026 (in US dollars); Shanghai Composite 1992–2026</em></p>
+<p><em>Chart text (translated): Moving-average rule applied to 10 markets: drawdowns are shallower everywhere, and only Shanghai has slightly lower returns. 9 / 10 markets have annualized returns no lower than buy and hold and shallower maximum drawdowns. Axis: maximum drawdown, −90% to −30%. Series/labels: gray dot = buy and hold, blue dot = moving-average rule v3; right column “Annualized difference (percentage points)”: US 1990–2026 +0.76; Developed ex-US +0.54; Europe +0.61; Japan +1.93; Asia Pacific (ex-Japan) +0.96; India +1.70; Brazil +2.06; South Korea +3.44; Taiwan +1.60; Shanghai Composite −0.62 (in red).</em></p>
+<p>Applied without changing a single word to the 4 developed-market regions in French’s international data (round 14) and to India, Brazil, South Korea and Taiwan (round 83, in US dollars), the rule gave “annualized return no lower, drawdown shallower” in all 9 markets. The Shanghai Composite is the exception: its drawdown is 9.5 percentage points shallower, but its annualized return is 0.62 lower (round 12). In every market, the rule earned more before 2009 and lost slightly after; the return advantage came from long, slow bear markets like 2000–2002 and 2008.</p>
+<h3 id="33-robustness">3.3 Robustness</h3>
+<ul>
+<li><strong>Rebalancing-date luck (round 15):</strong> moving the month-end check to any of the other 20 trading days in the month, the out-of-sample return advantage ranges from 0 to +1.1 percentage points, with a median of about +0.5.</li>
+<li><strong>Selection luck (round 20):</strong> the Deflated Sharpe Ratio computed over 330 candidates is 0.01, and the out-of-sample Probabilistic Sharpe Ratio is 0.75—the excess return is not significant.</li>
+<li><strong>Attribution:</strong> in CAPM, three-factor and Treynor–Mazuy regressions, α is significant in the full sample but not out of sample; timing ability shows up only at the annual scale.</li>
+<li><strong>Defensive position in intermediate-term Treasuries (rounds 18, 19; called v3.1):</strong> better than short-term bonds in all three periods; out-of-sample annualized return 12.51% vs 11.77% for the short-term-bond version (S&#x26;P 500 11.01%); compared with a fixed stock-bond portfolio of equal volatility, 12.5% / −32% vs 10.8% / −52%. The cost is larger losses when stocks and bonds fall together, as in the 1970s and 2022.</li>
+<li><strong>Renminbi basis (round 17):</strong> the drawdown advantage remains, at about 17 percentage points; the exchange rate is normally a cushion (monthly correlation −0.25), but in 2008 it amplified losses.</li>
+</ul>
+<h3 id="34-chinese-individual-income-tax-and-holding-forever">3.4 Chinese individual income tax and holding forever</h3>
+<p>Chinese tax residents report gains from overseas sales and dividends at 20%, with gains and losses offset within the same tax year and no carryforward across years (round 54). v3 sells every time it steps down a level, realizing gains equal to about 6–8% of net asset value each year; buy and hold can defer indefinitely.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>v3 − S&#x26;P 500 (out of sample, annualized pp)</th>
+<th>v3 (short-term bonds)</th>
+<th>v3.1 (intermediate-term Treasuries)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pre-tax</td>
+<td>+0.83</td>
+<td>+1.57</td>
+</tr>
+<tr>
+<td>After tax, sell everything at the end</td>
+<td>−0.22</td>
+<td>+0.40</td>
+</tr>
+<tr>
+<td>After tax, never sell</td>
+<td>−0.59</td>
+<td>+0.03</td>
+</tr>
+<tr>
+<td>After tax, from 2009-03 onward</td>
+<td>−2.44</td>
+<td>−2.48</td>
+</tr>
+</tbody>
+</table></div>
+<p>The pre-tax difference in the table uses the round 54 basis (starting 1990-01, with the first month in short-term bonds), so it differs slightly from the +0.76 in Section 3.1.</p>
+<p>The after-tax maximum drawdown is still −35% vs −55%. A “sell-less version” (trading only when off by more than one level, and stepping down at most once a year) is only 0.10 lower after tax, but it could not step down in 2008 and its drawdown was 8.3 percentage points deeper, so it failed (round 64). Conclusion: for an investor who holds forever and files as required, v3.1’s return is the same as buy and hold, and only the drawdown advantage remains.</p>
+<h2 id="4-stock-selection-and-anomalies">4 Stock selection and anomalies</h2>
+<p>None of the public stock-selection signals lets a small long-only investor reliably make money after costs: anomalies among US large caps have essentially disappeared after publication, the predictive power of A-share signals is concentrated on the “stocks to avoid” side, and earnings pre-announcement drift, the only signal that worked on the long side, has also vanished since 2022.</p>
+<h3 id="41-multi-factor-stock-screener">4.1 Multi-factor stock screener</h3>
+<p>The screener scores US stocks on momentum, valuation and growth, and holds a single stock at full position each time. Its backtested annualized return is about 17%, slightly above the S&#x26;P 500, but its maximum drawdown is −55% vs −34%; in the permutation test it beat only 86% of random stock picks (threshold 95%), and its CAPM α is not significant. Its fundamental components add nothing either: the “both revenue and net profit growing” filter has t = −0.42 in S&#x26;P 500 point-in-time data (round 30), and the valuation score’s rank IC is 0.003 (round 31).</p>
+<h3 id="42-published-us-anomalies">4.2 Published US anomalies</h3>
+<ul>
+<li>18 price-based factors in the S&#x26;P 500 are all insignificant after Holm correction (round 1); in French’s all-market data, price-based anomalies among large caps have essentially disappeared since 2000 (round 2).</li>
+<li>Of the 212 anomalies published by Chen–Zimmermann, 28% are still significant after publication under the original papers’ methods, which include micro-caps; in the large-cap half only 4% remain, and after multiple-testing correction not one is left (round 3)—anomalies live mainly in small caps, where trading costs are high.</li>
+<li>The only one that holds up across data sources is profitability: using SEC XBRL point-in-time statements it passed pre-registration in the S&#x26;P 500 (round 4), but the long-only version has t = 1.64 (round 6), and outside the US t = 0.42 (round 10).</li>
+<li>Insider buying has t = 0.41 (round 8); self-mined price-volume factors in the S&#x26;P 500 already failed in the exploration period (round 16); industry momentum has t = 1.76 after publication, which under the rules is a fail, with no parameter tweaking to make it pass (round 40).</li>
+</ul>
+<h3 id="43-a-share-price-volume-signals-and-machine-learning">4.3 A-share price-volume signals and machine learning</h3>
+<ul>
+<li>Abnormal turnover and short-term reversal effects are strong (t > 7), but the premium is concentrated on the short side (round 11).</li>
+<li>53 daily features + ridge regression: explored on 2006–2016 and, once finalized, tested only once on the hold-out period from 2016-10 onward. The monthly rank IC is 0.108 (t = 10.3), but going long only the top 10% earns +4.3% a year after costs, with t = 1.72, below the threshold of 2, so it fails (round 13). The same model’s “most likely to fall” list underperformed the whole market in 78% of months during the hold-out period, by −1.90% a month on average (t = −7.4); it has been switched to monthly forward tracking (round 94).</li>
+<li>The short-term trades common among retail investors all lose money: holding recent IPOs (次新股) for 3 years after their shares first stop hitting the daily limit (开板) returns −9.6% a year relative to stocks of the same market cap (t = −3.3, round 93); buying at the open the day after a limit-up returns −0.91% per trade (t = −27, round 95); bottom-fishing at the open the day after a limit-down returns −1.39% per trade (t = −21, round 97). The losses are concentrated overnight: the T+1 rule (shares bought today cannot be sold until the next trading day) keeps retail investors from capturing the daytime rebound, consistent with the attention-driven buying in Barber and Odean (2008).</li>
+</ul>
+<h3 id="44-a-share-company-announcements">4.4 A-share company announcements</h3>
+<p><img src="/img/116-rounds/fig3.png" alt="Round 98 · East Money earnings pre-announcements (expected increase + return to profit), announcement dates 2010-01 → 2026-06, 31,000 buyable events"></p>
+<p><em>Round 98 · East Money earnings pre-announcements (expected increase + return to profit), announcement dates 2010-01 → 2026-06, 31,000 buyable events</em></p>
+<p><em>Chart text (translated): Buying after large positive earnings pre-announcements: outperformed in most years before 2022, then disappeared. 2010–2021: positive in 10 / 12 years, average 1.88; 2022–2025: positive in 1 / 4 years, average −0.78. Each trade held 60 trading days; excess over all stocks equal-weighted after a 0.25% round-trip cost (percentage points), averaged by month of purchase; green = outperform, red = underperform. Axis: year 2010–2026; −2 to +8. Series/labels: 2010 +2.8; 2011 +3.7; 2012 +4.0; 2013 +1.4; 2014 −2.4; 2015 +3.7; 2016 −1.7; 2017 +3.8; 2018 +0.0; 2019 +2.6; 2020 +2.5; 2021 +2.1; 2022 −1.6; 2023 −1.8; 2024 +0.7; 2025 −0.5; 2026 +7.8; shaded area “2022 onward”; note: “2026 has first-half announcements only (light color)”.</em></p>
+<p>Buying at the open on the first trading day after an “expected increase / return to profit” earnings pre-announcement and holding for 60 trading days beats the whole market by 1.50% per trade after costs (t = 2.82), a pass under the pre-registration; but the monthly average for 2022–2025 is −1.05, and only 40–47% of individual trades outperformed, so it is not adopted (round 98). The timing matches the expansion of quantitative private funds after 2021 (see Section 5). East Money’s pre-announcement table excludes delisted companies; switching to “stocks that survived to today” as the benchmark changes the result by only 0.1 percentage points.</p>
+<p>A large drop in the number of shareholders (“chip concentration,” 筹码集中) gives +0.17% (t = 0.37) and purchases by major shareholders give −0.16% (t = −0.47), neither significant; the reverse, however, is significant: stocks whose shareholder count rose by more than 20% in one quarter underperformed by 1.23% over the next 60 days (t = −2.4, round 99)—again the side where retail investors pour in.</p>
+<h2 id="5-chinese-mutual-fund-enhanced-index-funds">5 Chinese mutual-fund enhanced index funds</h2>
+<p>Mutual-fund enhanced index funds are one of the few channels in this study through which small investors can earn A-share excess returns, but only the excess of CSI 1000 enhanced funds remains significant after removing IPO income and style effects; the “excess” of CSI 300 (沪深 300) and CSI 500 (中证 500) enhanced funds came mainly from the IPO-subscription bonus that comes with mutual-fund status, and it has decayed since 2021.</p>
+<p><img src="/img/116-rounds/fig4.png" alt="Round 21 · Tiantian Fund adjusted NAVs, 207 surviving enhanced index funds (a category is plotted for a year only if it has ≥ 5 funds), compared with 510300 / 510500 / 512100"></p>
+<p><em>Round 21 · Tiantian Fund adjusted NAVs, 207 surviving enhanced index funds (a category is plotted for a year only if it has ≥ 5 funds), compared with 510300 / 510500 / 512100</em></p>
+<p><em>Chart text (translated): Only CSI 1000 enhanced funds still have excess returns: CSI 500 and 300 enhanced funds fell to near 0 after 2021. CSI 1000 enhanced averaged +5.3 percentage points a year in 2023–2025. Surviving funds’ after-fee annual return − corresponding index ETF (percentage points), equal-weighted, including offline IPO income. Axis: year 2016–2025; 0 to +12. Series/labels: dashed line at 2021: “2021: private 500-enhanced products participating in IPO subscriptions 24 → 132”; end labels “CSI 1000 enhanced +7.7” (blue), “CSI 300 enhanced +0.2”, “CSI 500 enhanced −0.3”.</em></p>
+<h3 id="51-excess-returns-after-fees">5.1 Excess returns after fees</h3>
+<p>Comparing 207 CSI 300, CSI 500 and CSI 1000 enhanced funds with the corresponding index ETFs (round 21): CSI 1000 enhanced funds earned +3.9, +4.5 and +7.7 percentage points a year in 2023–2025, with 80–89% of funds outperforming. Annual excess returns within each category do not persist (autocorrelation −0.24 to +0.18), so picking funds by last year’s performance has no basis; buying 5 at random, even the worst 5% of outcomes beat the ETF by 1.4–3.3 percentage points a year (round 47). Lower-fee funds have higher excess returns (cross-sectional slope t = −3.1, round 57).</p>
+<h3 id="52-offline-ipo-allocation">5.2 Offline IPO allocation</h3>
+<p>Mutual funds get priority in offline allocations of new shares. After estimating and removing IPO income using about 100,000 fund-by-fund allocation records from East Money (round 53):</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Annualized α (incl. IPO income)</th>
+<th>After removing IPO income</th>
+<th>Also removing smaller-cap, size, turnover, low beta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CSI 300 enhanced</td>
+<td>2.8%</td>
+<td>0.35% (t = 0.48)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>CSI 500 enhanced</td>
+<td>—</td>
+<td>1.7% (t = 1.6)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>CSI 1000 enhanced</td>
+<td>6.2% (t = 5.4)</td>
+<td>4.1% (t = 3.4)</td>
+<td>3.2% (t = 2.7)</td>
+</tr>
+</tbody>
+</table></div>
+<p>After removing IPO income, CSI 1000 enhanced funds still earned +3.1, +3.8 and +6.8 a year in 2023–2025. The style controls use “smaller cap” (CNI 2000 (国证 2000) − CSI 1000) and self-built Liu–Stambaugh–Yuan size and abnormal-turnover factors (correlations with the public versions 0.97 / 0.93); the smaller-cap coefficient is −0.13 (t = −1.25), so the excess does not come from quietly holding micro-caps (rounds 45, 58).</p>
+<h3 id="53-decay-and-crowding">5.3 Decay and crowding</h3>
+<p>Mutual-fund AUM (round 44), the correlation of excess returns across funds (46), total market turnover (48), the cross-sectional dispersion of stock returns (56) and fund flows (60) all fail to explain the decay of CSI 500 enhanced funds. Private fund AUM is not public, but private products also take part in offline IPO subscriptions: counting entries on the allocation-account lists, the number of private 500-enhanced products participating in IPO subscriptions grew from 3 at the end of 2019 to 132 at the end of 2021 and about 190 in 2022, matching the timing of the collapse in excess returns, but the regression t = −1.62 is not significant (round 62).</p>
+<p>This yields a prediction that can be tested going forward: private 1000-enhanced products grew from 83 to 173 over 2025Q3 → 2026Q3 (from 0.90% → 1.36% of all allocation accounts, already above the 0.86% for 500-enhanced products at the end of 2021), while the 1000-enhanced category’s excess return for January–September 2026 is still +3.1%. If the crowding explanation holds, 1000-enhanced excess returns should fall markedly over the next year or two.</p>
+<h3 id="54-other-tests">5.4 Other tests</h3>
+<ul>
+<li><strong>Index reconstitution (rounds 49–52):</strong> in the June and December reconstitution months, monthly excess returns are higher by 0.45 (500 enhanced, t = 2.24) and 0.68 (1000 enhanced, t = 2.42) percentage points; deleted stocks underperform by 2.5% before the change takes effect (t = −3.3), but this cannot be linked event by event to reconstitution-period excess, and full holdings show no underweighting either (round 65).</li>
+<li><strong>Survivorship bias (round 59):</strong> a mutual fund’s allocation-account code is its fund code, so liquidated funds can be recovered; 0 1000-enhanced funds were liquidated, and adding back the liquidated 500 / 300 funds changes the annual average by &#x3C; 0.6 percentage points.</li>
+<li><strong>Exit rule (round 102):</strong> “switch back to the ETF if the category’s excess over the past 12 months is negative” loses money in all three categories (−1.58 / −0.60 / −0.44 a year)—500-enhanced excess went from high to low without turning negative, so the rule exits too late. Instead, monitor the number of private products and the category excess each year, and consider switching only when both conditions are met.</li>
+<li><strong>Exchange-traded vs over-the-counter (round 106):</strong> 6 exchange-traded enhanced ETFs have fees about 0.45 percentage points lower and average excess returns 1.0–1.5 higher in 2024–2025, with almost the same median; most are very small.</li>
+<li><strong>Small-cap stampede and sharp rally (round 110):</strong> from 2023-12-29 → 2024-02-05 the CSI 1000 fell 27.1%, while the 13 1000-enhanced funds already operating at the start of 2023 had average excess returns of +2.48% (12 positive); cross-sectionally this is unrelated to the “smaller-cap” exposure from 2023 daily regressions (t −0.55); one reason is that mutual funds’ beta is about 0.9. The cost comes in sharp rallies: in the two weeks of the 9·24 rally (September 24), the index rose 38.7%, while 1000-enhanced excess was −2.93% and 500-enhanced −4.28%, with every fund negative. The deepest drawdown of category cumulative excess was −6.2%, recovered in about 7 months.</li>
+<li><strong>Same company across products (round 112):</strong> within the same year, a company’s 500 / 300 enhanced and 1000 enhanced excess returns have rank correlations of 0.41–0.61; splitting into halves by the historical excess of a company’s other enhanced products, the top half’s 1000-enhanced funds are 1.9 percentage points higher the next year, but t = 1.87, which fails under the pre-registration.</li>
+<li><strong>Fund manager changes (round 111):</strong> among 397 manager changes in the 207 enhanced index funds, there were 27 complete replacements with a full 12 months before and after: in the following year they returned −1.50 percentage points relative to peers (t = −1.52), but they were already at −2.99 in the year before the change; after 230 partial changes, the following year was −0.12. Quantitative enhanced funds’ excess returns do not appear to be tied to individual managers, but the complete-replacement sample is small.</li>
+<li><strong>Benchmarks:</strong> mutual-fund quantitative hedge funds (公募量化对冲基金), with market exposure hedged out, have returned 2.4% annualized since 2015, vs 2.3% for Yu’e Bao (round 66); fully hedging with CSI 500 futures cost an average of about 9.8% a year in futures discount over 2016–2025 (round 74)—enhanced funds’ excess returns can be earned only by bearing full market risk.</li>
+</ul>
+<h2 id="6-other-assets-and-strategies">6 Other assets and strategies</h2>
+<p>Among arbitrage, cryptocurrencies, options, commodities, high-frequency trading and the timing methods commonly used by retail investors, only BTC cash-and-carry arbitrage passed under the pre-registered criteria, and its return over the last 12 months has been about the same as short-term Treasuries.</p>
+<p><img src="/img/116-rounds/fig5.png" alt="Annualized differences reported in each round (numbers copied from ROUNDS in &#x60;research/profit_overview.py&#x60;) · limit-up chasing and limit-down bottom-fishing are measured per trade, and BTC intraday momentum (about −37 a year) is not shown"></p>
+<p><em>Annualized differences reported in each round (numbers copied from ROUNDS in `research/profit_overview.py`) · limit-up chasing and limit-down bottom-fishing are measured per trade, and BTC intraday momentum (about −37 a year) is not shown</em></p>
+<p><em>Chart text (translated): Of 20 other approaches, only BTC cash-and-carry arbitrage passed the prior criteria. 1 passed; 11 earned less than their benchmark after costs; the rest that earned more were not significant or held only in some years. Percentage points a year above (+) / below (−) the benchmark, after costs; blue = passed the pre-registered criteria. Axis: −12 to +8. Series/labels (approach (round): value; right column “Benchmark”): BTC cash-and-carry arbitrage (round 22): +6.7, short-term bonds; Multi-asset trend following, after publication (28): +3.2, short-term bonds; A-share dividend ETF (38): +2.6, CSI 300 ETF; A-share industry momentum (77): +2.1, 10 industries equal-weighted; Main-board IPO subscription (26): +1.7, not subscribing; Smart-beta indexes, after launch (87): +1.2, broad-based index; Merger-arbitrage funds (23): +1.1, short-term bonds; Commodity index DBC (85): +0.91, Treasury bills; QDII premium rotation (34): +0.8, holding; SCHD dividend ETF (80): −2, S&#x26;P 500; RMB converted to USD in short-term bonds (27): −2.4, RMB interest rate; Put-option insurance PPUT (78): −3.4, S&#x26;P 500; A-share ETF grid trading (43): −4.5, half stocks / half money market fund; Convertible bond funds (63): −4.8, convertible bond ETF; US intraday momentum (36): −5.1, not trading; Multi-coin funding rate (25): −5.2, short-term bonds; BTC moving-average timing (24): −7.6, holding BTC; High-dividend covered-call ETFs (29): −8, index; Large/small-cap rotation, after it became popular (76): −9.4, half 300 / half 500; Overnight only, after 2010 (35): −10.7, S&#x26;P 500.</em></p>
+<ul>
+<li><strong>Cryptocurrencies (rounds 22–25, 33, 37, 96):</strong> buying BTC while shorting an equal amount of perpetual contracts, collecting only the funding rate, returned 9.8% annualized in 2020–2026, with a maximum drawdown of about −1%, vs 3.1% for short-term bonds over the same period; the returns were concentrated in bull markets, and exchange-failure and legal risks do not show up in a backtest. Rotating weekly into the 5 coins with the highest funding rates, switching costs ate up the extra funding. Newly listed coins have a median 90-day excess return relative to BTC of −43.5%; the one-year mean is +239%, almost entirely due to a single coin, AXS—a lottery-like distribution.</li>
+<li><strong>Arbitrage and trend following (rounds 23, 28):</strong> merger arbitrage is like selling put options: small gains in normal times, losses in crises (Mitchell and Pulvino 2001). The after-fee Sharpe ratio of AQR’s time-series momentum fell from 1.2 before publication to 0.24 after, but in months when US stocks fell more than 5% it earned 2.4% on average, making it more like crisis insurance.</li>
+<li><strong>Options and commodities (rounds 29, 78, 85):</strong> protective puts (PPUT) cost about 3.4 percentage points a year in premiums, and their maximum drawdown of −42% is still deeper than the moving-average rule’s −37%; puts protect against “fast drops” (only a 12% fall in March 2020), while the moving-average rule protects against “slow drops.” The commodity index’s deepest fall was 76%; holding part of the portfolio in it is worse than holding Treasuries.</li>
+<li><strong>High frequency (rounds 35–37):</strong> the S&#x26;P 500 overnight effect was strong in 1993–2009 and essentially disappeared after 2010; intraday momentum, with the first half hour predicting the last half hour, has t = 0.58 after 2014. The predictable part is only a few basis points, while a small account’s round-trip cost is 3–10 basis points.</li>
+<li><strong>Selection bias in index backtests (rounds 87, 88, 90):</strong> 420 CSI thematic, strategy and style indexes (launched 2010–2021) beat the CSI All Share (中证全指) by 4.3 percentage points a year in pre-launch backfilled data, and trailed it by 0.8 after launch; this holds in all 12 launch years, and the gap is still 3.3 after controlling for size and value styles. It is the same mechanism as the decay of anomalies after publication: only indexes with good-looking backtests get launched.</li>
+<li><strong>Active funds and investor timing (rounds 81, 86, 91, 92):</strong> active equity funds in 2016–2025, after adding back 250 liquidated funds, still beat broad-based indexes by about 4.5 percentage points a year, but almost all of it came from 2019–2020, and chasing last year’s winners did not help. A-share ETF investors did not earn less because of the timing of their entries and exits; investors in over-the-counter enhanced index funds earned 2–4 percentage points less under most measures, but this is sensitive to the end date.</li>
+</ul>
+<h2 id="7-investor-level-questions">7 Investor-level questions</h2>
+<p>For a Chinese individual investor who holds forever and files as required, the biggest influences on final wealth are not market timing or stock picking but three allocation choices: whether to sell (tax), which vehicle to hold through (tax and estate tax), and whether to bet on one country or diversify globally.</p>
+<h3 id="71-tax-and-holding-vehicles">7.1 Tax and holding vehicles</h3>
+<p>For Chinese tax residents, the common online claim that “Irish accumulating ETFs are more tax-efficient” holds only if you never sell: the China–US tax treaty reduces US withholding on dividends to 10%, whereas Irish funds are withheld 15% at the fund level, which cannot be credited. CSPX − VOO (2010-09 → 2026-10, annualized percentage points, rounds 68, 100):</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Basis</th>
+<th>CSPX − VOO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pre-tax</td>
+<td>−0.32</td>
+</tr>
+<tr>
+<td>Filing as required, sell at the end</td>
+<td>−0.05</td>
+</tr>
+<tr>
+<td>Not filing</td>
+<td>−0.12</td>
+</tr>
+<tr>
+<td>Filing as required, never sell</td>
+<td>+0.09 (higher in 85% of ten-year windows)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Once US assets exceed $60,000, a non-US person who dies owes US estate tax at marginal rates of 26–40%: on $300,000, about $75,000, which over 40 years of holding is equivalent to 0.7 percentage points less a year; Ireland-domiciled ETFs do not count as US assets. Domestic S&#x26;P 500 QDII funds are tax-free for individuals, but in recent years their tracking difference has been 1.6–5 percentage points a year worse (round 55).</p>
+<h3 id="72-single-country-risk">7.2 Single-country risk</h3>
+<p><img src="/img/116-rounds/fig6.png" alt="Round 101 · JST Macrohistory Database R6, annual data for 16 countries 1870–2020, start years 1870–1991; Germany 1922–1924 and windows with missing data excluded"></p>
+<p><em>Round 101 · JST Macrohistory Database R6, annual data for 16 countries 1870–2020, start years 1870–1991; Germany 1922–1924 and windows with missing data excluded</em></p>
+<p><em>Chart text (translated): Losing money after inflation over a 30-year hold: one in eight on average for a single country, never for the global portfolio. Across the 16 countries, 12.4% of 30-year windows had real losses; 5 countries had 0, including the US, the winner in hindsight. Share of 30-year holding periods, by start year, with cumulative real local-currency return &#x3C; 0 (%); global portfolio in real US dollars. Axis: 0% to 60%. Series/labels: dashed line “16 countries combined 12.4%”; France 57.9%; Portugal 47.1%; Italy 24%; Belgium 17.4%; Norway 12.6%; Sweden 8.3%; Finland 5.2%; Spain 4.3%; Japan 4%; Germany 1.1%; Netherlands 1.1%; Australia 0%; Denmark 0%; Switzerland 0%; UK 0%; US 0%; Global portfolio (GDP-weighted) 0% (in blue).</em></p>
+<p>A single country trailed the global portfolio by more than 2 percentage points a year in 38% of 30-year windows; on average the global portfolio actually earned about 1.4 percentage points a year more than a single country, so diversification has no cost. The US ranked a median 3rd among the countries with data at the time, but it still trailed the global portfolio in 36% of 30-year windows. Measured by year-end values, the longest the global portfolio took to get back to its starting point was 11 years (1974–1984), the US 13 years (2000–2012), and Japan 31 years (1990–2020). JST includes only countries that are still rich today, with no examples of stock markets going to zero like Russia in 1917 or China in 1949, so single-country risk is underestimated.</p>
+<h3 id="73-stock-bond-and-cross-currency-allocation">7.3 Stock-bond and cross-currency allocation</h3>
+<ul>
+<li><strong>Government bonds within A-shares (rounds 69, 70, 75, 89):</strong> about 3/4 CSI 1000 + 1/4 government bonds has had a maximum drawdown of −59% vs −72% since 2006, with an annualized return only 0.19 lower; using real 1000-enhanced funds and a government bond ETF (from 2019), drawdown is −27% vs −36%, with an annualized return 2.8 lower. Rotating between stocks and bonds by moving average adds only 0.45 over a fixed ratio.</li>
+<li><strong>How often to rebalance (round 109):</strong> for 3/4 + 1/4, rebalancing once at the end of each year is enough: 2005–2026 annualized 13.1% / drawdown −53%, about the same as “check monthly and rebalance when off by more than 10 percentage points”; rebalancing every month actually loses about 1 percentage point a year; never rebalancing lets stocks drift to over 90%, losing about 10 percentage points more in a crash like 2015.</li>
+<li><strong>Which bond duration (round 115):</strong> for 3/4 CSI 1000 + 1/4 government bonds, 5-year and 10-year bonds are almost the same: annualized 14.22% vs 14.21% in 2009–2017, 1.51% vs 1.78% since 2018, and the same full-period drawdown of −53.9%. Under the rules, stay with 5-year bonds. In months when the CSI 1000 fell more than 10%, 30-year bonds gained +1.6% on average, but they can lose 5–10% in a single year.</li>
+<li><strong>Is Yu’e Bao good enough for the defensive part (round 116):</strong> 2013-06 → 2026-09, 3/4 CSI 1000 + 1/4 Yu’e Bao returned 4.48% annualized, vs 4.65% with 1/4 government bonds (after fees), with maximum drawdowns of −54.1% vs −54.0%; under the rules, “Yu’e Bao is fine.” In months when the CSI 1000 fell more than 10%, government bonds gained only +0.39% on average: losing less comes mainly from holding only 3/4 in stocks, not from bonds’ hedging.</li>
+<li><strong>Switching the defensive part to an S&#x26;P QDII (round 103):</strong> over the full 2006–2026 period, annualized return is 1.57 lower and drawdown 6.3 deeper, so under the rules government bonds are kept; but since 2015, and with real funds since 2019, the QDII did better—the conclusion depends on RMB appreciation and the big A-share bull market in 2006–2014.</li>
+<li><strong>The split between RMB and USD (round 107):</strong> in a global crisis like 2008, any mix falls by about half; since 2015, all in 1000-enhanced funds had a deepest drawdown of −65%, half and half −35%, and all in global stocks −20%, while annualized returns rose in the same order (6.7%, 9.6%, 11.9%).</li>
+</ul>
+<h3 id="74-how-to-invest-new-money">7.4 How to invest new money</h3>
+<ul>
+<li>Lump-sum investing beat spreading purchases over 12 months about 70% of the time in US stocks; in A-shares it is roughly a coin toss (round 71).</li>
+<li>Holding cash and “waiting for a 20% drop to buy” did better in only 43% of 20-year windows in the US since 1926 (12% after 1990), with ending wealth about 3% lower on average; Japan’s long bear market after 1990 is the exception (round 104).</li>
+<li>Alipay-style “smart regular investing,” in a fair comparison with the same total amount invested, adds only 0.4% over 10 years on the CSI 1000; the high returns that platforms display come mainly from investing more principal at low points (round 105). Target-profit regular investing (taking profit at 20%) is no better than plain regular investing either (round 79).</li>
+<li>The exception for small amounts of new money is the fixed minimum commission per trade: when London-listed ETFs cost about $1.9 per trade and the broker pays no interest on the first $10,000 of cash, if monthly new money is less than about $300, save up for a few months before buying (optimal interval ≈ √(24 × fee per trade ÷ (expected return × monthly amount))); across 963 20-year windows in the US since 1926, at $100 a month, buying every 2 months beat buying every month 100% of the time, with a difference of about 0.5% of ending wealth.</li>
+</ul>
+<h3 id="75-should-a-perpetual-holder-use-leverage">7.5 Should a perpetual holder use leverage?</h3>
+<p>Borrowing to hold 1.5x stocks (borrowing rate = short-term bonds + 1.5%, rebalanced monthly), only the US, the winner in hindsight, reliably earned more: in 30-year windows since 1926, the median gain is 1.6 percentage points a year, and only 4% trailed 1x (round 108). With the JST global portfolio (1871–2020), leverage added only 0.4 a year, and one third of 30-year windows trailed; pooling single countries, more than half trailed. The cost is a bigger loss in crashes (US 1929–1932: 1.5x fell 95%, 1x 84%), and the gain is very sensitive to the borrowing spread: at a spread of 2.5%, the global portfolio no longer earns more. The evidence that “young people should use leverage” has the same problem as Section 7.2: it comes mainly from the US.</p>
+<h3 id="76-should-you-add-a-small-cap-value-tilt">7.6 Should you add a small-cap value tilt?</h3>
+<p>No (round 114). In French’s developed-market data (including the US, 1990-07 → 2026-08), small-cap value, after deducting a fee difference of about 0.25 percentage points, beat the market by 1.96 percentage points a year (t 1.63), but −0.29 since 2008; the premium was almost entirely in the 2000s (+9.6). With a 30% tilt rebalanced annually, the full period gains 0.72 a year with almost the same drawdown, but its high point relative to the pure market portfolio came in April 2010, and 16 years later it is still 6.2% below it. Developed markets ex-US did better (+2.77, t 2.26), but that is not the main test.</p>
+<h2 id="8-research-credibility">8 Research credibility</h2>
+<p>The biggest risk in this research is self-deception: the researcher wants their own ideas to be right. Pre-registration, split-sample testing and prior probabilities are all meant to constrain this; post hoc checks show these constraints helped, but over-optimism remains.</p>
+<h3 id="81-calibration-of-pre-registered-forecasts">8.1 Calibration of pre-registered forecasts</h3>
+<p><img src="/img/116-rounds/fig7.png" alt="Hand-checked round by round from the research log · &#x60;research/calibration.py&#x60;, 67 forecasts in the 63 rounds among rounds 13–116 that recorded a probability"></p>
+<p><em>Hand-checked round by round from the research log · `research/calibration.py`, 67 forecasts in the 63 rounds among rounds 13–116 that recorded a probability</em></p>
+<p><em>Chart text (translated): Prior probabilities were too optimistic: in the bins below 60%, outcomes occurred less often. The three bins below 60% hold 57 forecasts: prior average 32%, actual only 21%. Binned by prior probability; the larger the dot, the more forecasts in the bin; vertical line = distance from the diagonal. Axis: x = prior probability (bin average), 0% to 100%; y = actual occurrence rate, 0% to 100%. Series/labels: “80–100%: 100% (4)”; “60–80%: 83% (6)”; “40–60%: 43% (14)”; “20–40%: 20% (25)”; “0–20%: 6% (18)”; dashed line labeled “Diagonal = perfect calibration”.</em></p>
+<p>The 67 forecasts had an average prior probability of 38%, and 31% actually occurred; the Brier score is 0.145, versus 0.215 for a baseline that always forecasts the average occurrence rate, a skill score of +0.32—the prior judgments carry information. The bias is concentrated in the “my idea will pass” type: 54 pass-type verdicts had an average prior of 34% and an actual rate of 26%; in the first half (rounds 13–57), prior 33% / actual 33%, and in the second half (from round 64), prior 42% / actual 30%—growing more optimistic over time. High-confidence conclusions (≥ 60%) were, if anything, conservative. Coding the outcomes involves some subjectivity; each item is listed in the report so it can be checked.</p>
+<h3 id="82-multiple-testing">8.2 Multiple testing</h3>
+<p>Of the 54 “pass or fail” verdicts with prior probabilities, 14 passed. Most individual verdicts require t ≥ 2 plus the same sign in both sub-periods; if all hypotheses were false, a rough estimate is that about 1–2 would pass by chance. Credibility comes more from replication across markets and periods: the moving-average rule gave “annualized return no lower, drawdown shallower” in 9 markets (the Shanghai Composite had a shallower drawdown but slightly lower annualized return), while round 98’s pass no longer held after 2022.</p>
+<h3 id="83-main-limitations">8.3 Main limitations</h3>
+<ol>
+<li><strong>Backtests are not the future.</strong> The few edges that passed are all concentrated in a small number of years (long bear markets, A-share small-cap rallies).</li>
+<li><strong>Short samples.</strong> Enhanced index funds are assessed mainly over 2019–2025, and funding-rate arbitrage over 2020–2026.</li>
+<li><strong>Survivorship bias is only partly addressed.</strong> Only liquidated funds that took part in offline IPO subscriptions can be recovered; JST has no countries whose stock markets went to zero.</li>
+<li><strong>The limits of free data.</strong> Complete fund holdings, private fund AUM and analyst consensus forecasts are unavailable, so related questions can be answered only indirectly.</li>
+<li><strong>Topic selection itself has degrees of freedom.</strong> Pre-registration constrained each round’s verdict, but which rounds to run was the researcher’s choice.</li>
+<li><strong>Tax treatment.</strong> Reporting and crediting of overseas income may be enforced differently in different places; conclusions are given on a “filing as required” basis.</li>
+</ol>
+<h3 id="84-note-on-ai-assistance">8.4 Note on AI assistance</h3>
+<p>The research direction and constraints (only what an individual can actually execute, costs and taxes must be deducted, register before testing, report failures honestly) were set by me; data downloads, code, most of the test design and the analysis were done by the AI coding assistant Claude at my request, and I was responsible for reading, checking and final judgment. Each round’s pre-registration, data check, results and decision are recorded in the research log in time order, and every number can be recomputed from the raw data with the scripts in the project.</p>
+<h2 id="9-conclusion">9 Conclusion</h2>
+<p>For a Chinese individual investor with very little capital who reports overseas income as required, only one source of excess return can be reliably captured from public data: CSI 1000 enhanced index funds, at about 3–5 percentage points a year after removing IPO income, and now facing the risk of crowding by quantitative private funds. BTC cash-and-carry arbitrage passed historically, but its excess return over the past year is close to 0; the US moving-average rule reliably reduces drawdowns, but for a filer who holds forever, its after-tax return is the same as buy and hold. The value of the remaining roughly 100 rounds lies in ruling things out: limit-up chasing, chasing new coins, waiting for pullbacks, smart regular investing, valuation timing, chasing hot indexes and last year’s champion funds, long-term leverage, and adding a small-cap value tilt are all no better than the simplest approach.</p>
+<p>The result of the research is an allocation simpler than the one it started with. For the US dollar portion, hold an Ireland-domiciled accumulating all-world stock ETF forever: global because of single-country risk, accumulating because no sale means no taxable income, and Irish because it avoids US estate tax. For the renminbi portion, spread across 3–5 low-fee CSI 1000 enhanced funds, optionally putting about a quarter in government bonds or a money market fund to reduce drawdowns (the two differ by only about 0.2 a year, round 116). Invest new money in fixed amounts as soon as you have it, without timing. The same timing rule is still useful for people who will sell or who do not pay tax—what changes the answer is tax and horizon, not the rule itself.</p>
+<p>The next steps are forward validation and filling data gaps.</p>
+<ul>
+<li><strong>Forward validation:</strong> check the private 1000-enhanced crowding prediction every October; judge the A-share “most likely to fall” list once, per the pre-registration, when it reaches 12 months (around 2027-09); keep recording the moving-average rule’s monthly signals.</li>
+<li><strong>More data:</strong> redo the crowding and announcement-signal tests with private fund AUM, full fund holdings and analyst consensus forecasts from Wind or CSMAR.</li>
+<li><strong>Methodology:</strong> lower the probability of “will pass” by 5–10 percentage points at pre-registration, and keep adding each round’s result to the calibration table.</li>
+</ul>
+<h2 id="references">References</h2>
+<p>Compiled from memory; volume, issue and page numbers must be checked one by one before formal use.</p>
+<ul>
+<li>Anarkulova, A., Cederburg, S., &#x26; O’Doherty, M. S. (2022). Stocks for the long run? Evidence from a broad sample of developed markets. <em>Journal of Financial Economics</em>.</li>
+<li>Bailey, D. H., &#x26; López de Prado, M. (2014). The deflated Sharpe ratio: Correcting for selection bias, backtest overfitting, and non-normality. <em>Journal of Portfolio Management</em>.</li>
+<li>Barber, B. M., &#x26; Odean, T. (2000). Trading is hazardous to your wealth: The common stock investment performance of individual investors. <em>Journal of Finance</em>.</li>
+<li>Barber, B. M., &#x26; Odean, T. (2008). All that glitters: The effect of attention and news on the buying behavior of individual and institutional investors. <em>Review of Financial Studies</em>.</li>
+<li>Bernard, V. L., &#x26; Thomas, J. K. (1989). Post-earnings-announcement drift: Delayed price response or risk premium? <em>Journal of Accounting Research</em>.</li>
+<li>Carhart, M. M. (1997). On persistence in mutual fund performance. <em>Journal of Finance</em>.</li>
+<li>Chen, A. Y., &#x26; Zimmermann, T. (2022). Open source cross-sectional asset pricing. <em>Critical Finance Review</em>.</li>
+<li>Harvey, C. R., Liu, Y., &#x26; Zhu, H. (2016). … and the cross-section of expected returns. <em>Review of Financial Studies</em>.</li>
+<li>Hou, K., Xue, C., &#x26; Zhang, L. (2020). Replicating anomalies. <em>Review of Financial Studies</em>.</li>
+<li>Jordà, Ò., Knoll, K., Kuvshinov, D., Schularick, M., &#x26; Taylor, A. M. (2019). The rate of return on everything, 1870–2015. <em>Quarterly Journal of Economics</em>.</li>
+<li>Liu, J., Stambaugh, R. F., &#x26; Yuan, Y. (2019). Size and value in China. <em>Journal of Financial Economics</em>.</li>
+<li>McLean, R. D., &#x26; Pontiff, J. (2016). Does academic research destroy stock return predictability? <em>Journal of Finance</em>.</li>
+<li>Mitchell, M., &#x26; Pulvino, T. (2001). Characteristics of risk and return in risk arbitrage. <em>Journal of Finance</em>.</li>
+<li>Moskowitz, T. J., Ooi, Y. H., &#x26; Pedersen, L. H. (2012). Time series momentum. <em>Journal of Financial Economics</em>.</li>
+<li>Ritter, J. R. (1991). The long-run performance of initial public offerings. <em>Journal of Finance</em>.</li>
+<li>Treynor, J. L., &#x26; Mazuy, K. K. (1966). Can mutual funds outguess the market? <em>Harvard Business Review</em>.</li>
+</ul>
+<p>Data: Ken French Data Library; JST Macrohistory Database (R6); Chen–Zimmermann Open Source Asset Pricing; SEC EDGAR XBRL; Tiantian Fund, East Money Data Center; China Securities Index Co., Ltd. website; China Financial Futures Exchange; baostock; Yahoo Finance; Binance (data.binance.vision); FRED.</p>
+<h2 id="appendix-all-116-rounds-at-a-glance">Appendix: all 116 rounds at a glance</h2>
+<p>Each round’s pre-registration, data check, results and decision are recorded in the research log in time order; the table below gives the one-sentence version.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Round</th>
+<th>Question</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>18 price / volume factors in the S&#x26;P 500</td>
+<td>0 significant after Holm correction</td>
+</tr>
+<tr>
+<td>2</td>
+<td>9 classic factors in French all-market data, before vs after publication</td>
+<td>8 clearly weaker after publication; none with t > 2 after publication</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Chen-Zimmermann’s 212 published anomalies</td>
+<td>Under the original papers’ methods, 54% decay after publication (McLean-Pontiff: 58%); large caps only: negative on average after publication, 0 after correction</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4 accounting factors built from SEC point-in-time filings</td>
+<td>Profitability (OperProf) passes (IC t = 2.59)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>14 factor ETFs after fees vs SPY</td>
+<td>0 reliably outperform</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Long only: large-cap high profitability vs large caps</td>
+<td>Post-publication t = 1.64, threshold 1.65, fail</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Turn-of-the-month effect</td>
+<td>1926–1989 t = 7.7 → after 2010 t = 0.5</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Insider buying</td>
+<td>+0.3%/yr (t 0.41)</td>
+</tr>
+<tr>
+<td>9</td>
+<td>RSI(2) “buy after a big drop”</td>
+<td>Lost money in 1926–1989, made money after 1990: market structure changed</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Large-cap high profitability outside the US</td>
+<td>t = 0.42; round 6 not replicated</td>
+</tr>
+<tr>
+<td>11</td>
+<td>A-share size, abnormal turnover, reversal, momentum</td>
+<td>Turnover and reversal t > 7, but returns concentrated on the short side</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Trend rule applied to A-shares</td>
+<td>Smaller drawdown, slightly lower return</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Self-mined A-share factors: 53 daily features + ridge regression, most recent ten years held out and tested once</td>
+<td>Ten-year out-of-sample IC 0.108 (t 10.3), but long-only top 10% after costs +4.3%/yr (t 1.72), threshold 2, fail</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Trend rule applied to developed markets outside the US</td>
+<td>Main test passes, all three regions pass; lags after 2009</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Rebalancing-date luck</td>
+<td>All 21 check days meet the bar; return advantage 0 to 1.1 pp</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Self-mined US S&#x26;P 500 factors (same process)</td>
+<td>Exploration-period IC 0.00–0.02; the only “working” one was illiquidity created by survivorship bias, and after removing it all underperformed; never finalized, hold-out period untouched</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Renminbi investor’s perspective</td>
+<td>In RMB terms, v3 drawdown −42% vs SPY −59%; the exchange rate is normally a cushion, but amplified losses in 2008</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Idle cash in 10-year Treasuries vs short-term bonds</td>
+<td>Better in all three periods, adopted; but worse in inflationary bear markets (1970s, 2022)</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Versus a fixed stock-bond portfolio of equal volatility</td>
+<td>Out of sample: fixed portfolio 10.8% / −52%, strategy 12.5% / −32%; 60/40 has the same drawdown but earns 3.6 pp less</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Deflated Sharpe Ratio</td>
+<td>In-sample DSR 0.01, out-of-sample PSR 0.75: excess return not statistically significant</td>
+</tr>
+<tr>
+<td>21</td>
+<td>A-share mutual-fund enhanced index funds after fees vs index ETFs (2023–2025)</td>
+<td>CSI 1000 enhanced +3.9 / +4.5 / +7.7 pp a year, pass; 500 enhanced fell from +12% in 2020 to −0.3% in 2025</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Binance funding-rate arbitrage (long spot + short perpetual)</td>
+<td>2020–2026 annualized 9.8% vs short-term bonds 3.1%, drawdown −1%, pass; but level with short-term bonds over the last 12 months</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Merger-arbitrage funds after fees vs short-term bonds</td>
+<td>+2.0 since 1989, +0.6 to +1.7 over the last 10 years, fail</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Trend rule applied to BTC (no leverage)</td>
+<td>Drawdown only 16–19 pp smaller, Sharpe ratio almost unchanged, fail</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Multi-coin funding-rate arbitrage (weekly rotation into the top 5 by funding rate)</td>
+<td>Annualized −1.9%, drawdown −39%: gross return of about 15%/yr eaten up by switching costs, fail</td>
+</tr>
+<tr>
+<td>26</td>
+<td>A-share main-board IPO subscription (10,000 yuan of holdings each in Shanghai and Shenzhen)</td>
+<td>About 1,150 yuan in 2020, about 330 yuan / yr in 2024–2025, fail</td>
+</tr>
+<tr>
+<td>27</td>
+<td>Converting RMB to USD and holding US short-term bonds (interest rate parity)</td>
+<td>2005–2026 annualized −2.4% (t −2.3), fail</td>
+</tr>
+<tr>
+<td>28</td>
+<td>Multi-asset time-series momentum (AQR, before vs after publication)</td>
+<td>After-fee Sharpe ratio 1.19 → 0.24; +2.4%/month on average in stock-crash months, fail</td>
+</tr>
+<tr>
+<td>29</td>
+<td>High-dividend covered-call ETFs (JEPI, QYLD, etc.) vs index</td>
+<td>Total return including dividends 5.5–10.6 pp a year lower, fail</td>
+</tr>
+<tr>
+<td>30</td>
+<td>Screener’s revenue and net-profit growth filter (SEC point-in-time annual reports)</td>
+<td>Pass − fail −0.04%/month (t −0.42), no visible effect</td>
+</tr>
+<tr>
+<td>31</td>
+<td>Screener’s valuation score (P/E relative to its own history)</td>
+<td>1-month rank IC +0.003 (t 0.35), useless</td>
+</tr>
+<tr>
+<td>32</td>
+<td>A-share LOF premium arbitrage (subscribe on exchange, sell at T+2, assuming subscription is always possible)</td>
+<td>+0.7% per trade, 51% of trades profitable; for QDII, using the NAV known at the time leaves only +1.2%, fail</td>
+</tr>
+<tr>
+<td>33</td>
+<td>BTC cash-and-carry: quarterly delivery contracts vs perpetuals</td>
+<td>7.8% vs 9.5%/yr, difference not significant (t −0.91)</td>
+</tr>
+<tr>
+<td>34</td>
+<td>A-share Nasdaq / S&#x26;P QDII ETF premium rotation (costs based on small capital)</td>
+<td>Excess +0.8%/yr (t 0.7): relative premiums are very persistent and do not converge</td>
+</tr>
+<tr>
+<td>35</td>
+<td>US overnight effect (buy at the close, sell at the open)</td>
+<td>Overnight minus intraday: 1993–2009 t 2.9 → after 2010 t 0.9; after costs far worse than holding</td>
+</tr>
+<tr>
+<td>36</td>
+<td>US intraday momentum (Gao et al. 2018)</td>
+<td>After 2014 t 0.58; after costs −2 basis points a day</td>
+</tr>
+<tr>
+<td>37</td>
+<td>BTC intraday momentum</td>
+<td>Negative coefficient (t −1.16); loses money even before costs</td>
+</tr>
+<tr>
+<td>38</td>
+<td>A-share dividend ETF vs CSI 300 ETF</td>
+<td>Full-period annualized 8.0% vs 5.4%, but monthly excess t 0.61, year by year −30% to +23%: a style bet</td>
+</tr>
+<tr>
+<td>39</td>
+<td>A-share pre-holiday effect</td>
+<td>CSI 300 2005–2014 t 2.8 → afterward t 0.9; CSI 1000 about 0 after costs</td>
+</tr>
+<tr>
+<td>40</td>
+<td>US industry momentum (French 12 industries + SPDR ETFs)</td>
+<td>Before publication t 3.4 → after publication t 1.8; real ETFs only 0.9 pp more</td>
+</tr>
+<tr>
+<td>41</td>
+<td>A-share public REIT public subscriptions (small capital)</td>
+<td>Popular ones can’t be allocated; the ones you can get are a matter of luck: −24 yuan in 2024, +1,009 yuan in 2025 (almost all from one)</td>
+</tr>
+<tr>
+<td>42</td>
+<td>Leveraging both stocks and bonds (50% SSO + 50% 10-year Treasuries)</td>
+<td>Term premium exactly offset by the 2x ETF’s costs: out of sample 10.6% vs market 11.0%, −26.6% in 2022</td>
+</tr>
+<tr>
+<td>43</td>
+<td>A-share ETF grid trading (brokers’ “grid conditional orders”)</td>
+<td>Sells out after a few grid steps up, then stays in cash (73–99% of days); all four ETFs trail “half ETF, half money market fund” by 2.5–6.5 pp a year</td>
+</tr>
+<tr>
+<td>44</td>
+<td>Diseconomies of scale in enhanced index funds (Berk–Green, Pástor–Stambaugh–Taylor)</td>
+<td>Not visible at the fund level (t −0.54); total mutual-fund AUM in the group can’t explain the 500-enhanced decay either</td>
+</tr>
+<tr>
+<td>45</td>
+<td>How much enhanced-fund excess comes from “smaller than the benchmark” exposure</td>
+<td>1000 enhanced α after removing small-cap exposure and low beta: 6.2% annualized (t 5.4); small-cap coefficient insignificant</td>
+</tr>
+<tr>
+<td>46</td>
+<td>Correlation of excess returns between funds as a crowding measure</td>
+<td>500-enhanced correlation rose in 2017–2021, but has no predictive power (t 0.40); all three groups peaked at the same time in 2024</td>
+</tr>
+<tr>
+<td>47</td>
+<td>How many 1000-enhanced funds are enough to diversify</td>
+<td>With 5, the worst 5% in 2023–2025 still +1.4–3.3 pp a year</td>
+</tr>
+<tr>
+<td>48</td>
+<td>Enhanced-fund excess and total market turnover</td>
+<td>Unrelated (t 0.02): the 500-enhanced decay is structural</td>
+</tr>
+<tr>
+<td>49</td>
+<td>Is enhanced-fund excess concentrated in index reconstitution months</td>
+<td>June and December +0.45–0.68 pp a month (t 2.2–2.6), no reversal the following month</td>
+</tr>
+<tr>
+<td>50</td>
+<td>CSI 500 reconstitution event study</td>
+<td>Added stocks show no excess (t 0.8); deleted stocks underperform by 2.5% before the effective date (t −3.3)</td>
+</tr>
+<tr>
+<td>51</td>
+<td>CSI 300 reconstitution (replication)</td>
+<td>Both added and deleted stocks underperform the index; does not hold under the pre-registration</td>
+</tr>
+<tr>
+<td>52</td>
+<td>The more deleted stocks underperform, the higher the reconstitution-period excess?</td>
+<td>Not visible event by event (t 1.38, opposite direction)</td>
+</tr>
+<tr>
+<td>53</td>
+<td>How much enhanced-fund excess is offline IPO income (100,000 fund-level allocation records)</td>
+<td>After removing IPO income, 1000 enhanced α 4.1% (t 3.4); 500 enhanced 1.7% (t 1.6), 300 enhanced 0.35% (t 0.5)—for these two groups, mutual-fund excess is mainly IPO income</td>
+</tr>
+<tr>
+<td>54</td>
+<td>Trend strategy under Chinese individual income tax</td>
+<td>See Section 3.4: after-tax advantage +0.40 (v3.1) / −0.22 (short-term-bond version)</td>
+</tr>
+<tr>
+<td>55</td>
+<td>S&#x26;P 500: domestic QDII vs holding directly and paying tax</td>
+<td>QDII median tracking difference −2.5%/yr; after-tax drag of direct holding −1.4%/yr</td>
+</tr>
+<tr>
+<td>56</td>
+<td>Can cross-sectional dispersion of stock returns predict enhanced-fund excess</td>
+<td>No (t 0.31)</td>
+</tr>
+<tr>
+<td>57</td>
+<td>Enhanced-fund fees and net excess</td>
+<td>Slope −2.4 (t −3.1, three groups pooled)</td>
+</tr>
+<tr>
+<td>58</td>
+<td>Self-built Liu–Stambaugh–Yuan size and turnover factors</td>
+<td>After removing IPO income, size, turnover and low beta together, 1000 enhanced α still 3.2% (t 2.7)</td>
+</tr>
+<tr>
+<td>59</td>
+<td>Liquidated funds (recovered via offline allocation-account codes)</td>
+<td>No 1000-enhanced fund was liquidated; 11 recovered for 500 / 300, impact within ±0.6 pp</td>
+</tr>
+<tr>
+<td>60</td>
+<td>Do inflows dilute next year’s excess</td>
+<td>Money chases performance (t 2.9), but inflows don’t lower next year’s excess (t 1.2)</td>
+</tr>
+<tr>
+<td>61</td>
+<td>CNI / CSI 2000 enhanced vs 1000 enhanced</td>
+<td>−2.2% in 2024, +11.3% in 2025; two years prove nothing</td>
+</tr>
+<tr>
+<td>62</td>
+<td>Number of private enhanced products in offline IPO subscriptions (crowding proxy)</td>
+<td>Private 500 enhanced: 3 in 2019 → about 190 in 2022, matching the collapse in excess; pooled test t −1.6</td>
+</tr>
+<tr>
+<td>63</td>
+<td>Convertible bond funds vs convertible bond index ETF</td>
+<td>Trailed in each year of 2022–2024; equity beta, not excess</td>
+</tr>
+<tr>
+<td>64</td>
+<td>Sell-less v3.1 under Chinese individual income tax</td>
+<td>After tax −0.10, but 2008 drawdown 8.3 pp deeper, fail</td>
+</tr>
+<tr>
+<td>65</td>
+<td>Do 1000-enhanced funds underweight deleted stocks before reconstitution (full holdings)</td>
+<td>Underweight by only 0.25 pp (t −0.76); holdings don’t line up</td>
+</tr>
+<tr>
+<td>66</td>
+<td>Mutual-fund quantitative hedge funds (21) vs Yu’e Bao</td>
+<td>2.4% vs 2.3% annualized since 2015, lost in every year of 2023–2025, fail</td>
+</tr>
+<tr>
+<td>67</td>
+<td>Putting half of the US strategy’s defensive position in gold</td>
+<td>Lost 20 pp less in 1973–74, but drawdown 1.8 deeper after 1990, fail</td>
+</tr>
+<tr>
+<td>68</td>
+<td>Chinese tax resident: VOO or Irish CSPX</td>
+<td>VOO better whether filing or not (0.05 / 0.12 more a year)</td>
+</tr>
+<tr>
+<td>69</td>
+<td>A-share moving-average rotation between stocks and government bonds (CSI 500, from 2008)</td>
+<td>Annualized 4.48% / drawdown −55% vs always holding 2.74% / −71%, pass</td>
+</tr>
+<tr>
+<td>70</td>
+<td>Fixed stock-bond portfolio with the same average position</td>
+<td>4.04% / −57%: timing adds only 0.45 more; a fixed ratio is simpler</td>
+</tr>
+<tr>
+<td>71</td>
+<td>Lump sum vs spreading over 12 months</td>
+<td>US: lump sum wins 69%; CSI 500: 52%, close to a coin toss</td>
+</tr>
+<tr>
+<td>72</td>
+<td>Short- and medium-term bond funds (403) vs Yu’e Bao</td>
+<td>1.7 / 1.8 / 0.4 more a year; 2025 missed the threshold, fail</td>
+</tr>
+<tr>
+<td>73</td>
+<td>Half position when CAPE is above its historical median, before vs after publication</td>
+<td>After publication, half position in 98% of months, annualized 6.26% vs 9.66%, fail</td>
+</tr>
+<tr>
+<td>74</td>
+<td>Can hedge fund returns be explained by “enhanced-fund excess − futures discount”</td>
+<td>Full hedging with IC (CSI 500 futures) costs 9.8%/yr on average, but actual vs theoretical correlation is 0.16; the explanation is incomplete</td>
+</tr>
+<tr>
+<td>75</td>
+<td>Checking “3/4 1000 enhanced + 1/4 government bond ETF” with real funds</td>
+<td>Drawdown −27% vs −36%, annualized 13.1% vs 15.8%: losing less costs money</td>
+</tr>
+<tr>
+<td>76</td>
+<td>Large/small-cap rotation</td>
+<td>3.7 more a year before it became popular; after, annualized −6.0% vs +3.4% for half and half</td>
+</tr>
+<tr>
+<td>77</td>
+<td>A-share industry momentum (strongest 3 level-1 industries)</td>
+<td>2.1 more a year, t 1.24, not adopted</td>
+</tr>
+<tr>
+<td>78</td>
+<td>Put-option insurance PPUT vs moving average</td>
+<td>PPUT 7.6% / −42%, moving average 11.7% / −37%</td>
+</tr>
+<tr>
+<td>79</td>
+<td>Target-profit regular investing (20%)</td>
+<td>Better in 54% of 5-year windows, 1.8% less on average, not adopted</td>
+</tr>
+<tr>
+<td>80</td>
+<td>SCHD vs S&#x26;P 500 (with Chinese individual income tax)</td>
+<td>About 2 pp less a year, same drawdown</td>
+</tr>
+<tr>
+<td>81</td>
+<td>Active equity funds vs broad-based index; chasing last year’s winner</td>
+<td>Overall 5.1 more a year, but concentrated in 2019–2020; chasing winners doesn’t help</td>
+</tr>
+<tr>
+<td>82</td>
+<td>Survivorship bias in active funds (recovered by name)</td>
+<td>Method failed: the search interface can’t recover liquidated funds</td>
+</tr>
+<tr>
+<td>83</td>
+<td>Moving-average rule applied to India, Brazil, South Korea, Taiwan</td>
+<td>4/4 annualized no lower, drawdown smaller; all slightly behind after 2009</td>
+</tr>
+<tr>
+<td>84</td>
+<td>A-share defensive 1/4: gold or government bonds</td>
+<td>Gold drawdown 2.9 deeper and positively correlated with A-shares; keep government bonds</td>
+</tr>
+<tr>
+<td>85</td>
+<td>Commodity index ETF (DBC)</td>
+<td>Only 0.9 more than cash over 20 years; deepest fall 76%</td>
+</tr>
+<tr>
+<td>86</td>
+<td>Redoing active-fund survivorship bias with allocation-account codes</td>
+<td>250 liquidated equity funds recovered; 5.1 → 4.5 more a year; round 81’s conclusion holds</td>
+</tr>
+<tr>
+<td>87</td>
+<td>A-share smart-beta indexes after launch vs broad-based index</td>
+<td>0 / 6 significant; pre-launch backfill 4.5 more a year, post-launch 1.2</td>
+</tr>
+<tr>
+<td>88</td>
+<td>420 CSI indexes, pre-launch backfill vs post-launch</td>
+<td>4.3 more a year before launch, 0.8 less after; holds in all 12 launch years</td>
+</tr>
+<tr>
+<td>89</td>
+<td>Full-history CSI 1000 check of 3/4 + 1/4 government bonds</td>
+<td>Drawdown −59% vs −72%, almost the same annualized return</td>
+</tr>
+<tr>
+<td>90</td>
+<td>Do A-share thematic ETFs “peak at launch”</td>
+<td>5.0 more a year in the 12 months before inception, +1.0 after (t 0.6); not visible</td>
+</tr>
+<tr>
+<td>91</td>
+<td>Money-weighted returns of investors in 622 A-share ETFs</td>
+<td>Investors didn’t earn less because of entry/exit timing; ETF flows lean contrarian</td>
+</tr>
+<tr>
+<td>92</td>
+<td>Money-weighted returns of investors in over-the-counter enhanced index funds</td>
+<td>2–4 pp less under most measures, but sensitive to the end date; not detectable under the rules</td>
+</tr>
+<tr>
+<td>93</td>
+<td>A-share recent IPOs for 3 years after first stopping at the daily limit vs mature stocks of the same market cap</td>
+<td>9.6 less a year (t −3.3), negative in 12 of 13 years</td>
+</tr>
+<tr>
+<td>94</td>
+<td>“A-shares most likely to fall” warning list (forward)</td>
+<td>Archived and tracked monthly; judged once around 2027-09</td>
+</tr>
+<tr>
+<td>95</td>
+<td>A-share limit-up chasing: buy at the open the day after a limit-up</td>
+<td>−0.91% per trade after costs (t −27), negative in all 17 years; losses occur overnight</td>
+</tr>
+<tr>
+<td>96</td>
+<td>Newly listed Binance coins vs BTC</td>
+<td>90-day median excess −43.5%; one-year mean driven by a single coin, AXS</td>
+</tr>
+<tr>
+<td>97</td>
+<td>A-share limit-down bottom-fishing: buy at the open the day after a limit-down</td>
+<td>−1.39% per trade after costs (t −21), negative in all 17 years</td>
+</tr>
+<tr>
+<td>98</td>
+<td>Buy after large positive / turnaround earnings pre-announcements, hold 60 trading days</td>
+<td>Passes by the rules (+1.50%, t 2.8), but negative in 2022–2025, not adopted</td>
+</tr>
+<tr>
+<td>99</td>
+<td>Large drops in shareholder count; purchases by major shareholders</td>
+<td>Neither makes money; after large increases in shareholder count, stocks underperform by 1.2 pp</td>
+</tr>
+<tr>
+<td>100</td>
+<td>Holding forever: US ETF or Irish accumulating ETF</td>
+<td>Taxes and fees about the same (+0.09); once US assets exceed $60,000, estate tax outweighs other differences</td>
+</tr>
+<tr>
+<td>101</td>
+<td>Probability of a real loss holding a single country for 30 years (JST, 16 countries)</td>
+<td>Single country 12.4%, global portfolio 0%; global earns about 1.4 more a year on average</td>
+</tr>
+<tr>
+<td>102</td>
+<td>Exit rule for enhanced index funds</td>
+<td>Loses in all three categories (−0.4 to −1.6 a year); annual autocorrelation of category excess about 0</td>
+</tr>
+<tr>
+<td>103</td>
+<td>RMB 1/4 defensive leg: government bonds or S&#x26;P QDII</td>
+<td>Government bonds better over the full period; QDII better since 2015; depends on the period</td>
+</tr>
+<tr>
+<td>104</td>
+<td>New money: wait for a 20% drop vs buy when you have it</td>
+<td>Buying when you have it is better; waiting loses about 3% on average; Japan is the exception</td>
+</tr>
+<tr>
+<td>105</td>
+<td>Smart regular investing vs plain regular investing</td>
+<td>In a fair comparison, only 0.4% more over 10 years (CSI 1000)</td>
+</tr>
+<tr>
+<td>106</td>
+<td>Exchange-traded 1000-enhanced ETFs vs over-the-counter funds</td>
+<td>Average excess 1.0–1.5 higher, median the same; weak evidence</td>
+</tr>
+<tr>
+<td>107</td>
+<td>The split between RMB and USD</td>
+<td>No diversification benefit visible over the full period; since 2015, the higher the RMB share, the deeper the drawdown</td>
+</tr>
+<tr>
+<td>108</td>
+<td>Leverage for a perpetual holder</td>
+<td>Don’t: the global portfolio at 1.5x earns only about 0.4 more a year, and about one third of 30-year windows trail no leverage</td>
+</tr>
+<tr>
+<td>109</td>
+<td>How often to rebalance RMB 3/4 + 1/4</td>
+<td>Once at the end of each year is enough; never rebalancing drifts to 90% stocks and loses about 10 pp more in 2015</td>
+</tr>
+<tr>
+<td>110</td>
+<td>Enhanced-fund excess in the early-2024 small-cap stampede and the 9·24 rally</td>
+<td>During the stampede, mutual-fund 1000 enhanced outperformed by about 2.5 (low beta); in the 9·24 rally, trailed by about 2.9</td>
+</tr>
+<tr>
+<td>111</td>
+<td>Enhanced index fund manager changes</td>
+<td>No visible effect: 12 months after a complete replacement, −1.5 vs peers (t −1.52), already about 3 behind before the change</td>
+</tr>
+<tr>
+<td>112</td>
+<td>Can a company’s other enhanced products predict its 1000-enhanced fund</td>
+<td>Fail (t 1.87); the same company’s products rise and fall together (correlation 0.4–0.6) → spread across companies</td>
+</tr>
+<tr>
+<td>113</td>
+<td>Binance Launchpool (stake stablecoins to farm new coins)</td>
+<td>Pre-registered; API rate-limited, data not obtained, no conclusion</td>
+</tr>
+<tr>
+<td>114</td>
+<td>All-world ETF plus a global small-cap value tilt</td>
+<td>Fail: developed markets 1990–2026 +1.96 a year (t 1.63), −0.29 after 2008; a 30% tilt has lagged from 2010 to date</td>
+</tr>
+<tr>
+<td>115</td>
+<td>RMB 1/4 government bonds: 5-year or 10-year</td>
+<td>Almost the same (full-period portfolio annualized difference 0.13); keep 5-year; 30-year can lose 5–10% in a year</td>
+</tr>
+<tr>
+<td>116</td>
+<td>RMB defensive 1/4: Yu’e Bao or government bonds</td>
+<td>Yu’e Bao is fine: annualized only 0.18 lower, same drawdown; losing less comes from position size, not from government bonds</td>
+</tr>
+</tbody>
+</table></div> </div> <nav class="post-nav" aria-label="Previous and next article" data-pagefind-ignore>  <a class="next" href="/en/export-volatility-working-paper/"><small class="mono">Next →</small>How Large Is the Effect of Partner-Currency Volatility on China&#39;s Exports? A Re-examination Using Monthly Partner-Level Data, 2000–2025</a> </nav> </article> <style>@page { @top-center { content: "Qiushi Papers · Can Individual Investors Earn Excess Returns from Public Data"; font-family: 'Times New Roman', serif; font-style: italic; } } @page :first { @top-center { content: none; } }</style><script type="module">const a=()=>document.querySelectorAll('img[loading="lazy"]').forEach(t=>t.loading="eager");addEventListener("beforeprint",a);location.hash==="#print"&&a();document.querySelectorAll(".paper .table-wrap").forEach(t=>{const e=t.previousElementSibling,o=t.nextElementSibling,n=document.createElement("div");n.className="table-block",t.before(n),e?.classList.contains("table-caption")&&n.append(e),n.append(t),o?.classList.contains("table-note")&&n.append(o)});document.querySelectorAll(".prose pre").forEach(t=>{const e=document.createElement("button");e.type="button",e.className="copy-btn mono",e.textContent="复制",e.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(t.querySelector("code")?.innerText??t.innerText),e.textContent="已复制"}catch{e.textContent="复制失败"}setTimeout(()=>e.textContent="复制",1500)}),t.appendChild(e)});</script>  </main> <footer class="site-footer"> <div class="wrap mono"> <span>© 2026 撸撸黄 LuluH</span> <span class="footer-links">  <a href="https://github.com/bearkid6" rel="me noopener" target="_blank">GitHub</a>  </span> </div> </footer> <script>
+      document.getElementById('theme-toggle').addEventListener('click', function () {
+        var next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+        document.documentElement.dataset.theme = next;
+        try { localStorage.setItem('theme', next); } catch (e) {}
+      });
+    </script> </body> </html>
